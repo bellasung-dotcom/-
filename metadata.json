@@ -1,0 +1,6 @@
+{
+  "name": "모찌앤잡 방구석 여행 블로그 수익화",
+  "description": "前 마이리얼트립 블로그 협업 담당자가 3만 개 글을 분석해 만든 AI 자동화 방구석 여행 블로그 수익화 VOD 랜딩페이지",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
