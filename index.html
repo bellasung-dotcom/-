@@ -341,7 +341,10 @@
     /* YouTube Video Player Embed */
     .hero-video-box {
       width: 100%;
-      height: 380px;
+      aspect-ratio: 16 / 9;
+      height: auto;
+      min-height: 260px;
+      max-height: 440px;
       border-radius: 16px;
       overflow: hidden;
       background: #020617;
@@ -357,6 +360,185 @@
       display: block;
       border: none;
       background: #000000;
+    }
+
+    /* Hero Stage Tracker: 슈퍼얼리버드 > 얼리버드 > 기본가 */
+    .hero-stage-tracker {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      max-width: 680px;
+      margin: 0 auto 32px;
+      padding: 14px 18px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 18px;
+      box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(37, 99, 235, 0.15);
+      backdrop-filter: blur(10px);
+    }
+
+    .stage-step {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px 8px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      position: relative;
+      text-decoration: none;
+    }
+
+    .stage-step:hover {
+      transform: translateY(-2px);
+    }
+
+    .stage-step.active {
+      background: linear-gradient(135deg, rgba(255, 94, 0, 0.22) 0%, rgba(250, 204, 21, 0.16) 100%);
+      border: 1.5px solid var(--accent-primary);
+      box-shadow: 0 0 20px rgba(255, 94, 0, 0.35);
+    }
+
+    .stage-step.upcoming {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px dashed rgba(148, 163, 184, 0.3);
+      opacity: 0.8;
+    }
+
+    .stage-step.upcoming:hover {
+      opacity: 1;
+      border-color: rgba(56, 189, 248, 0.5);
+    }
+
+    .stage-badge {
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-bottom: 4px;
+      letter-spacing: -0.2px;
+    }
+
+    .stage-step.active .stage-badge {
+      background: var(--accent-primary);
+      color: #FFFFFF;
+      box-shadow: 0 2px 8px rgba(255, 94, 0, 0.5);
+      animation: pulseGlow 2s infinite;
+    }
+
+    .stage-step.upcoming .stage-badge {
+      background: rgba(148, 163, 184, 0.2);
+      color: #94A3B8;
+    }
+
+    .stage-name {
+      font-size: 15px;
+      font-weight: 900;
+      color: #FFFFFF;
+      margin-bottom: 2px;
+      letter-spacing: -0.3px;
+    }
+
+    .stage-step.active .stage-name {
+      color: var(--accent-secondary);
+    }
+
+    .stage-price {
+      font-size: 18px;
+      font-weight: 900;
+      color: #FFFFFF;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stage-sub {
+      font-size: 11px;
+      color: #94A3B8;
+      margin-top: 3px;
+      letter-spacing: -0.3px;
+    }
+
+    .stage-step.active .stage-sub {
+      color: #FDBA74;
+      font-weight: 700;
+    }
+
+    /* Stage Tracker Blurred & Locked State */
+    .stage-step.blurred-locked {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px dashed rgba(239, 68, 68, 0.45);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .stage-step.blurred-locked:hover {
+      border-color: rgba(239, 68, 68, 0.7);
+    }
+
+    .stage-step.blurred-locked .stage-inner-content {
+      filter: blur(2.5px);
+      opacity: 0.45;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .stage-lock-badge-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(220, 38, 38, 0.95);
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 12px;
+      border-radius: 20px;
+      box-shadow: 0 4px 14px rgba(220, 38, 38, 0.6);
+      letter-spacing: -0.3px;
+      white-space: nowrap;
+      z-index: 3;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      animation: pulseGlowRed 2.5s infinite;
+    }
+
+    @keyframes pulseGlowRed {
+      0%, 100% {
+        box-shadow: 0 4px 14px rgba(220, 38, 38, 0.6);
+      }
+      50% {
+        box-shadow: 0 6px 20px rgba(220, 38, 38, 0.9);
+      }
+    }
+
+    .stage-arrow {
+      color: var(--accent-secondary);
+      font-size: 18px;
+      font-weight: 900;
+      opacity: 0.85;
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    @media (max-width: 640px) {
+      .hero-stage-tracker {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+      }
+      .stage-step {
+        width: 100%;
+        padding: 8px;
+      }
+      .stage-arrow {
+        transform: rotate(90deg);
+        font-size: 14px;
+      }
     }
 
     .video-guide-overlay {
@@ -1250,6 +1432,341 @@
       border-top: 2px solid rgba(255, 94, 0, 0.3);
     }
 
+    /* Three-Tier Pricing Grid: 슈퍼얼리버드 59만 / 얼리버드 69만 / 기존가 79만 */
+    .pricing-three-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1140px;
+      margin: 40px auto 0;
+      align-items: stretch;
+    }
+
+    .pricing-tier-card {
+      background: var(--surface-card);
+      border: 1.5px solid var(--border-color);
+      border-radius: 20px;
+      padding: 34px 24px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .pricing-tier-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+
+    .pricing-tier-card.featured {
+      border: 2px solid var(--accent-primary);
+      background: linear-gradient(180deg, rgba(255, 94, 0, 0.12) 0%, var(--surface-card) 45%);
+      box-shadow: 0 20px 50px -10px rgba(255, 94, 0, 0.35), 0 0 30px rgba(255, 94, 0, 0.15);
+      transform: scale(1.03);
+      z-index: 2;
+    }
+
+    .pricing-tier-card.featured:hover {
+      transform: scale(1.05) translateY(-4px);
+    }
+
+    .tier-badge-top {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg, #FF5E00, #ff8c42);
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 900;
+      padding: 4px 16px;
+      border-radius: 20px;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(255, 94, 0, 0.4);
+      letter-spacing: -0.2px;
+    }
+
+    .tier-badge-top.secondary {
+      background: rgba(56, 189, 248, 0.2);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #38BDF8;
+      box-shadow: none;
+    }
+
+    .tier-badge-top.neutral {
+      background: rgba(148, 163, 184, 0.2);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      color: #94A3B8;
+      box-shadow: none;
+    }
+
+    .tier-title-area {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    }
+
+    .tier-name-title {
+      font-size: 22px;
+      font-weight: 900;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .pricing-tier-card.featured .tier-name-title {
+      color: var(--accent-secondary);
+    }
+
+    .tier-subtitle-text {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .tier-price-box {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .tier-prev-price {
+      font-size: 14px;
+      color: var(--text-muted);
+      text-decoration: line-through;
+      margin-bottom: 4px;
+      min-height: 20px;
+    }
+
+    .tier-main-price-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 4px;
+      margin-bottom: 6px;
+    }
+
+    .tier-amount {
+      font-size: 38px;
+      font-weight: 900;
+      color: #FFFFFF;
+      letter-spacing: -1px;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+
+    .pricing-tier-card.featured .tier-amount {
+      color: var(--accent-primary);
+    }
+
+    .tier-unit-label {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-sub);
+    }
+
+    .pricing-tier-card.featured .tier-unit-label {
+      color: var(--accent-primary);
+    }
+
+    .tier-monthly-badge {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--accent-secondary);
+      background: rgba(250, 204, 21, 0.12);
+      border: 1px solid rgba(250, 204, 21, 0.3);
+      padding: 6px 12px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+
+    .tier-perks-container {
+      margin-bottom: 26px;
+      flex-grow: 1;
+    }
+
+    .tier-btn-action {
+      width: 100%;
+      padding: 16px 20px;
+      font-size: 15px;
+      font-weight: 900;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      letter-spacing: -0.3px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+    }
+
+    .tier-btn-action.btn-super {
+      background: linear-gradient(135deg, #FF5E00 0%, #ff792a 100%);
+      color: #FFFFFF;
+      box-shadow: 0 8px 20px rgba(255, 94, 0, 0.5);
+      animation: pulseGlow 2.5s infinite;
+    }
+
+    .tier-btn-action.btn-super:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(255, 94, 0, 0.7);
+    }
+
+    .tier-btn-action.btn-secondary {
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #38BDF8;
+    }
+
+    .tier-btn-action.btn-secondary:hover {
+      background: rgba(56, 189, 248, 0.25);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    .tier-btn-action.btn-neutral {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #E2E8F0;
+    }
+
+    .tier-btn-action.btn-neutral:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    /* Bottom Pricing Cards Blur & Lock Styles */
+    .pricing-tier-card.tier-locked {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1.5px dashed rgba(239, 68, 68, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-tier-card.tier-locked .tier-inner-content {
+      filter: blur(2.5px);
+      opacity: 0.45;
+      user-select: none;
+      pointer-events: none;
+      transition: filter 0.2s ease;
+    }
+
+    .tier-lock-badge-overlay {
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 900;
+      padding: 7px 18px;
+      border-radius: 30px;
+      box-shadow: 0 8px 25px rgba(220, 38, 38, 0.6);
+      letter-spacing: -0.3px;
+      white-space: nowrap;
+      z-index: 5;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      animation: pulseGlowRed 2.5s infinite;
+    }
+
+    .tier-btn-action.btn-locked {
+      background: rgba(30, 41, 59, 0.85);
+      border: 1.5px solid rgba(239, 68, 68, 0.5);
+      color: #FCA5A5;
+      cursor: pointer;
+      font-weight: 900;
+      box-shadow: none;
+      position: relative;
+      z-index: 6;
+    }
+
+    .tier-btn-action.btn-locked:hover {
+      background: rgba(239, 68, 68, 0.18);
+      color: #FFFFFF;
+      border-color: rgba(239, 68, 68, 0.8);
+      transform: translateY(-2px);
+    }
+
+    /* Modal Locked Tier Option */
+    .tier-option.tier-option-locked {
+      opacity: 0.6;
+      border: 1.5px dashed rgba(239, 68, 68, 0.4);
+      background: rgba(15, 23, 42, 0.5);
+      position: relative;
+      cursor: pointer;
+    }
+
+    .tier-option.tier-option-locked .tier-info-left,
+    .tier-option.tier-option-locked .tier-price-right {
+      filter: blur(1.5px);
+      user-select: none;
+    }
+
+    .tier-option-lock-tag {
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(239, 68, 68, 0.9);
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 12px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      z-index: 4;
+      white-space: nowrap;
+    }
+
+    /* Interactive Guidance Toast */
+    .pricing-guide-toast {
+      position: fixed;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: rgba(15, 23, 42, 0.95);
+      border: 1.5px solid #FF5E00;
+      border-radius: 14px;
+      padding: 12px 24px;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 94, 0, 0.4);
+      backdrop-filter: blur(10px);
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      text-align: center;
+      max-width: 90%;
+    }
+
+    .pricing-guide-toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+
+    @media (max-width: 960px) {
+      .pricing-three-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        gap: 32px;
+      }
+      .pricing-tier-card.featured {
+        transform: none;
+      }
+      .pricing-tier-card.featured:hover {
+        transform: translateY(-4px);
+      }
+    }
+
     .price-card-large-bottom {
       background: var(--surface-card);
       border: 2px solid rgba(255, 94, 0, 0.5);
@@ -1914,6 +2431,36 @@
               ⚡ 25% 특별할인 혜택 확인하기 ↓
             </a>
           </div>
+
+          <!-- 슈퍼얼리버드 > 얼리버드 > 기본가 단계 표시 영역 -->
+          <div class="hero-stage-tracker" role="region" aria-label="얼리버드 단계별 수강료 혜택">
+            <a href="#pricing-bottom" class="stage-step active" onclick="openCheckoutModal('super')" title="1차 슈퍼얼리버드 59만원 신청하기">
+              <div class="stage-badge">현재 1차 최저가</div>
+              <div class="stage-name">슈퍼얼리버드</div>
+              <div class="stage-price">59만원</div>
+              <div class="stage-sub">25% 특별할인 · 마감임박</div>
+            </a>
+            <div class="stage-arrow">➔</div>
+            <div class="stage-step blurred-locked" onclick="handleLockedTierClick('early')" title="2차 얼리버드 69만원 - 인상예정">
+              <div class="stage-inner-content">
+                <div class="stage-badge">2차 얼리버드</div>
+                <div class="stage-name">얼리버드</div>
+                <div class="stage-price">69만원</div>
+                <div class="stage-sub">+10만원 인상 예정</div>
+              </div>
+              <div class="stage-lock-badge-center">🔒 인상예정</div>
+            </div>
+            <div class="stage-arrow">➔</div>
+            <div class="stage-step blurred-locked" onclick="handleLockedTierClick('regular')" title="3차 기본가 79만원 - 인상예정">
+              <div class="stage-inner-content">
+                <div class="stage-badge">3차 기본가</div>
+                <div class="stage-name">기본가</div>
+                <div class="stage-price">79만원</div>
+                <div class="stage-sub">최종 정가 판매</div>
+              </div>
+              <div class="stage-lock-badge-center">🔒 인상예정</div>
+            </div>
+          </div>
         </div>
 
         <!-- <강사 프로필 사진 첨부, 뒤에 여행 이모지, 노트북 이모지> -->
@@ -2208,10 +2755,10 @@
 
         <div class="profile-hero-grid">
           <div class="instructor-card-frame">
-            <div class="profile-photo-placeholder">
-              <div class="photo-placeholder-icon">👩‍🏫</div>
-              <div class="photo-placeholder-title">[강사 프로필 사진 위치]</div>
-              <div class="photo-placeholder-sub">前 마이리얼트립 파트너팀 매니저<br />크몽 전속 여행 블로그 No.1 모찌앤잡</div>
+            <div class="profile-photo-placeholder" style="border: 1px solid rgba(56, 189, 248, 0.4); background: radial-gradient(circle at 50% 30%, #1e293b 0%, #0f172a 100%);">
+              <div class="photo-placeholder-icon">✈️</div>
+              <div style="font-size: 20px; font-weight: 900; color: #FFFFFF; margin-bottom: 6px;">모찌앤잡 (Mozzi & Job)</div>
+              <div class="photo-placeholder-sub">前 마이리얼트립 파트너팀 매니저<br />크몽 전속 여행 블로그 No.1</div>
             </div>
           </div>
 
@@ -2403,34 +2950,29 @@
           <p class="section-subtitle">월 4만 원대 무이자 할부로 모찌앤잡의 모든 자동화 자산을 영구 소장하세요.</p>
         </div>
 
-        <div class="price-card-large-bottom">
-          <div class="price-card-top-tag">⚡ 얼리버드 특별 할인 (단일 올인원 패키지)</div>
-
-          <div class="price-layout-grid">
-            <!-- Left Info -->
-            <div>
-              <div class="price-header-row">
-                <span class="original-price">790,000원</span>
-                <span class="discount-pill">25% 특별할인</span>
-              </div>
-
-              <div class="price-main-display">
-                <span class="price-amount" id="mainPriceDisplay">590,000</span>
-                <span class="price-unit">원</span>
-              </div>
-
-              <div class="installment-text">
-                <span>💳</span>
-                <span>12개월 무이자 할부 시 <strong>월 49,166원</strong></span>
-              </div>
-
-              <button class="cta-btn-pulse" onclick="openCheckoutModal()">
-                [ ⚡ 수강 신청하고 AI 프로그램 같이 받기 ]
-              </button>
+        <div class="pricing-three-grid">
+          
+          <!-- Tier 1: 슈퍼얼리버드 (Featured / Best) -->
+          <div class="pricing-tier-card featured">
+            <div class="tier-badge-top">⚡ 1차 슈퍼얼리버드 (BEST 마감임박)</div>
+            
+            <div class="tier-title-area">
+              <div class="tier-name-title">슈퍼얼리버드</div>
+              <div class="tier-subtitle-text">선착순 10명 한정 25% 특별할인가</div>
             </div>
 
-            <!-- Right Perks -->
-            <div>
+            <div class="tier-price-box">
+              <div class="tier-prev-price">정상가 790,000원 (25% 할인)</div>
+              <div class="tier-main-price-row">
+                <span class="tier-amount">590,000</span>
+                <span class="tier-unit-label">원</span>
+              </div>
+              <div class="tier-monthly-badge">
+                💳 12개월 무이자 시 <strong>월 49,166원</strong>
+              </div>
+            </div>
+
+            <div class="tier-perks-container">
               <ul class="price-perks-list">
                 <li class="price-perk-item">
                   <span class="perk-check">✓</span>
@@ -2455,7 +2997,120 @@
                 </li>
               </ul>
             </div>
+
+            <button class="tier-btn-action btn-super" onclick="openCheckoutModal('super')">
+              [ ⚡ 수강 신청하고 AI 프로그램 같이 받기 ]
+            </button>
           </div>
+
+          <!-- Tier 2: 얼리버드 (블러처리 & 인상예정) -->
+          <div class="pricing-tier-card tier-locked">
+            <div class="tier-badge-top secondary">2차 얼리버드 (인상예정)</div>
+            <div class="tier-lock-badge-overlay">🔒 인상예정</div>
+            
+            <div class="tier-inner-content">
+              <div class="tier-title-area">
+                <div class="tier-name-title">얼리버드</div>
+                <div class="tier-subtitle-text">1차 마감 직후 오픈 예정</div>
+              </div>
+
+              <div class="tier-price-box">
+                <div class="tier-prev-price">정상가 790,000원 (13% 할인)</div>
+                <div class="tier-main-price-row">
+                  <span class="tier-amount">690,000</span>
+                  <span class="tier-unit-label">원</span>
+                </div>
+                <div class="tier-monthly-badge" style="color: #38BDF8; background: rgba(56, 189, 248, 0.1); border-color: rgba(56, 189, 248, 0.3);">
+                  💳 12개월 무이자 시 <strong>월 57,500원</strong>
+                </div>
+              </div>
+
+              <div class="tier-perks-container">
+                <ul class="price-perks-list">
+                  <li class="price-perk-item">
+                    <span class="perk-check">✓</span>
+                    <span><strong>모찌앤잡 여행 특화 AI 자동화 프로그램 3종 풀세트</strong></span>
+                  </li>
+                  <li class="price-perk-item" style="cursor: pointer;" onclick="openEbookModal()">
+                    <span class="perk-check">✓</span>
+                    <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                      <span><strong>여행 블로그 수익화 전자책 201p</strong></span>
+                      <button type="button" class="ebook-view-btn" onclick="event.stopPropagation(); openEbookModal();">
+                        📖 세부 목차 보기 ▶
+                      </button>
+                    </div>
+                  </li>
+                  <li class="price-perk-item">
+                    <span class="perk-check">✓</span>
+                    <span><strong>여행 블로그 수익화 VOD 12강</strong></span>
+                  </li>
+                  <li class="price-perk-item">
+                    <span class="perk-check">✓</span>
+                    <span><strong>여행 블로그 수익화 풀패키지</strong></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="tier-btn-action btn-locked" onclick="handleLockedTierClick('early')">
+              [ 🔒 69만원 인상예정 (오픈 대기) ]
+            </button>
+          </div>
+
+          <!-- Tier 3: 기본가 (기존가 - 블러처리 & 인상예정) -->
+          <div class="pricing-tier-card tier-locked">
+            <div class="tier-badge-top neutral">3차 기존가 (인상예정)</div>
+            <div class="tier-lock-badge-overlay">🔒 인상예정</div>
+            
+            <div class="tier-inner-content">
+              <div class="tier-title-area">
+                <div class="tier-name-title">기존가 (기본가)</div>
+                <div class="tier-subtitle-text">얼리버드 프로모션 종료 후 정가 판매</div>
+              </div>
+
+              <div class="tier-price-box">
+                <div class="tier-prev-price" style="visibility: hidden;">정상가 790,000원</div>
+                <div class="tier-main-price-row">
+                  <span class="tier-amount">790,000</span>
+                  <span class="tier-unit-label">원</span>
+                </div>
+                <div class="tier-monthly-badge" style="color: #94A3B8; background: rgba(148, 163, 184, 0.1); border-color: rgba(148, 163, 184, 0.3);">
+                  💳 12개월 무이자 시 <strong>월 65,833원</strong>
+                </div>
+              </div>
+
+              <div class="tier-perks-container">
+                <ul class="price-perks-list">
+                  <li class="price-perk-item">
+                    <span class="perk-check">✓</span>
+                    <span><strong>모찌앤잡 여행 특화 AI 자동화 프로그램 3종 풀세트</strong></span>
+                  </li>
+                  <li class="price-perk-item" style="cursor: pointer;" onclick="openEbookModal()">
+                    <span class="perk-check">✓</span>
+                    <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                      <span><strong>여행 블로그 수익화 전자책 201p</strong></span>
+                      <button type="button" class="ebook-view-btn" onclick="event.stopPropagation(); openEbookModal();">
+                        📖 세부 목차 보기 ▶
+                      </button>
+                    </div>
+                  </li>
+                  <li class="price-perk-item">
+                    <span class="perk-check">✓</span>
+                    <span><strong>여행 블로그 수익화 VOD 12강</strong></span>
+                  </li>
+                  <li class="price-perk-item">
+                    <span class="perk-check">✓</span>
+                    <span><strong>여행 블로그 수익화 풀패키지</strong></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="tier-btn-action btn-locked" onclick="handleLockedTierClick('regular')">
+              [ 🔒 79만원 인상예정 (정가 환원) ]
+            </button>
+          </div>
+
         </div>
 
       </div>
@@ -2543,31 +3198,32 @@
 
         <div class="bottom-bar-cta">
           <div class="bottom-price-summary">
-            <div class="bottom-original">790,000원</div>
-            <div class="bottom-price">월 49,166원</div>
+            <div class="bottom-original">정상가 790,000원</div>
+            <div class="bottom-price">월 49,166원 <span style="font-size: 12px; font-weight: 800; color: #F87171;">(59만 특가)</span></div>
           </div>
-          <button class="bottom-cta-btn" onclick="openCheckoutModal()">
+          <button class="bottom-cta-btn" onclick="openCheckoutModal('super')">
             [ ⚡ 수강 신청하고 AI 프로그램 같이 받기 ]
           </button>
         </div>
       </div>
     </aside>
 
-    <!-- Interactive Checkout / Single Tier Selection Modal -->
+    <!-- Interactive Checkout / 3-Tier Selection Modal -->
     <div class="modal-overlay" id="checkoutModal" onclick="handleModalBackdrop(event)">
       <div class="modal-card">
         <button class="modal-close-btn" onclick="closeCheckoutModal()">✕</button>
         
-        <h3 class="modal-title">수강 신청 및 패키지 확인</h3>
-        <p class="modal-subtitle">수강료 인상 전, 특별 얼리버드 단일 패키지 혜택을 잡으세요.</p>
+        <h3 class="modal-title">수강 신청 및 옵션 선택</h3>
+        <p class="modal-subtitle">차수별 수강료 인상 전, 원하시는 얼리버드 혜택을 선택하세요.</p>
 
         <div class="tier-options">
-          <div class="tier-option selected">
+          <!-- Super Early Bird -->
+          <div class="tier-option selected" id="tierOptionSuper" onclick="selectTier('super')">
             <div class="tier-info-left">
-              <div class="tier-radio checked"></div>
+              <div class="tier-radio checked" id="tierRadioSuper"></div>
               <div>
                 <div class="tier-name">
-                  여행 블로그 수익화 올인원 풀패키지 <span class="tier-tag">단일 풀패키지</span>
+                  1차 슈퍼얼리버드 <span class="tier-tag">25% 할인 · 마감임박</span>
                 </div>
                 <div class="tier-desc">VOD 12강 + AI 3종 프로그램 영구 소장 + 전자책 201p + 고수익 키워드 DB</div>
               </div>
@@ -2578,11 +3234,61 @@
               <div class="tier-installment">12개월 시 월 49,166원</div>
             </div>
           </div>
+
+          <!-- Early Bird (인상예정) -->
+          <div class="tier-option tier-option-locked" id="tierOptionEarly" onclick="handleLockedTierClick('early')" title="2차 얼리버드 - 인상예정">
+            <div class="tier-info-left">
+              <div class="tier-radio" id="tierRadioEarly"></div>
+              <div>
+                <div class="tier-name">
+                  2차 얼리버드 <span class="tier-tag" style="background: rgba(239, 68, 68, 0.2); color: #F87171;">인상예정</span>
+                </div>
+                <div class="tier-desc">VOD 12강 + AI 3종 프로그램 영구 소장 + 전자책 201p + 고수익 키워드 DB</div>
+              </div>
+            </div>
+            <div class="tier-price-right">
+              <div class="tier-original" style="font-size: 13px; text-decoration: line-through; color: var(--text-muted);">790,000원</div>
+              <div class="tier-price">690,000원</div>
+              <div class="tier-installment">12개월 시 월 57,500원</div>
+            </div>
+            <span class="tier-option-lock-tag">🔒 인상예정</span>
+          </div>
+
+          <!-- Regular Price (인상예정) -->
+          <div class="tier-option tier-option-locked" id="tierOptionRegular" onclick="handleLockedTierClick('regular')" title="3차 기본가 - 인상예정">
+            <div class="tier-info-left">
+              <div class="tier-radio" id="tierRadioRegular"></div>
+              <div>
+                <div class="tier-name">
+                  3차 기존가 (기본가) <span class="tier-tag" style="background: rgba(239, 68, 68, 0.2); color: #F87171;">인상예정</span>
+                </div>
+                <div class="tier-desc">VOD 12강 + AI 3종 프로그램 영구 소장 + 전자책 201p + 고수익 키워드 DB</div>
+              </div>
+            </div>
+            <div class="tier-price-right">
+              <div class="tier-original" style="font-size: 13px; visibility: hidden;">790,000원</div>
+              <div class="tier-price">790,000원</div>
+              <div class="tier-installment">12개월 시 월 65,833원</div>
+            </div>
+            <span class="tier-option-lock-tag">🔒 인상예정</span>
+          </div>
         </div>
 
-        <button class="modal-submit-btn" onclick="submitRegistration()">
-          ⚡ 수강 신청하고 AI 프로그램 같이 받기
+        <button class="modal-submit-btn" id="modalSubmitBtn" onclick="submitRegistration()">
+          ⚡ 1차 슈퍼얼리버드 (590,000원) 신청하기
         </button>
+
+        <div id="registrationSuccessCard" style="display: none; background: rgba(16, 185, 129, 0.15); border: 1.5px solid #10B981; border-radius: 12px; padding: 20px; margin-top: 16px; text-align: center;">
+          <div style="font-size: 28px; margin-bottom: 8px;">🎉</div>
+          <div style="font-size: 18px; font-weight: 900; color: #FFFFFF; margin-bottom: 8px;" id="successTierTitle">슈퍼얼리버드 수강 신청 완료!</div>
+          <p style="font-size: 13px; color: #D1FAE5; line-height: 1.6; margin: 0 0 16px;" id="successTierDesc">
+            선택하신 혜택이 정상 확보되었습니다.<br />
+            AI 프로그램 접속 링크와 VOD 12강 수강 안내가 등록 정보로 즉시 전달됩니다.
+          </p>
+          <button type="button" class="modal-submit-btn" style="background: #10B981; border: none;" onclick="closeCheckoutModal()">
+            확인 및 닫기
+          </button>
+        </div>
 
         <p style="font-size: 12px; color: var(--text-muted); text-align: center; margin-top: 14px;">
           결제 즉시 수강 안내 문자와 AI 프로그램 접속 링크가 카카오톡으로 발송됩니다.
@@ -2802,18 +3508,101 @@
       if (overlay) overlay.style.display = 'none';
       if (video) {
         video.play().catch(() => {
-          alert('영상 파일(mp4) 또는 유튜브 링크를 연결하시면 바로 고화질 영상이 재생됩니다.');
+          showToast('영상 파일(mp4) 또는 유튜브 링크를 연결하시면 바로 고화질 영상이 재생됩니다.');
           if (overlay) overlay.style.display = 'flex';
         });
       }
     }
 
-    // 5. Checkout Modal Controls (Single All-in-One Package)
-    function openCheckoutModal() {
+    // Floating Interactive Toast Notification
+    function showToast(msg) {
+      let toast = document.getElementById('pricingGuideToast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'pricingGuideToast';
+        toast.className = 'pricing-guide-toast';
+        document.body.appendChild(toast);
+      }
+      toast.innerHTML = msg.replace(/\n/g, '<br />');
+      toast.classList.add('show');
+      if (window._toastTimer) clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3500);
+    }
+
+    // Locked Tier Click Handler
+    function handleLockedTierClick(tierKey) {
+      const tierName = tierKey === 'early' ? '2차 얼리버드 (69만원)' : '3차 기존가 (79만원)';
+      showToast(`🔒 ${tierName}는 차수 마감 후 인상 예정입니다.<br />현재 최저가 혜택인 <strong>[1차 슈퍼얼리버드 59만원]</strong>으로 연결합니다!`);
+      openCheckoutModal('super');
+    }
+
+    // 5. Checkout Modal Controls (3 Tier Selection)
+    let currentSelectedTier = 'super';
+    const tierData = {
+      super: {
+        name: '1차 슈퍼얼리버드',
+        price: '590,000원',
+        monthly: '월 49,166원',
+        discount: '25% 특별할인',
+        submitText: '⚡ 1차 슈퍼얼리버드 (590,000원) 신청하기'
+      },
+      early: {
+        name: '2차 얼리버드',
+        price: '690,000원',
+        monthly: '월 57,500원',
+        discount: '13% 특별할인',
+        submitText: '⚡ 2차 얼리버드 (690,000원) 신청하기'
+      },
+      regular: {
+        name: '3차 기존가 (기본가)',
+        price: '790,000원',
+        monthly: '월 65,833원',
+        discount: '정상가',
+        submitText: '⚡ 3차 기본가 (790,000원) 신청하기'
+      }
+    };
+
+    function selectTier(tierKey) {
+      currentSelectedTier = tierKey || 'super';
+      const capMap = { super: 'Super', early: 'Early', regular: 'Regular' };
+
+      ['super', 'early', 'regular'].forEach(k => {
+        const opt = document.getElementById('tierOption' + capMap[k]);
+        const rad = document.getElementById('tierRadio' + capMap[k]);
+        if (opt && rad) {
+          if (k === currentSelectedTier) {
+            opt.classList.add('selected');
+            rad.classList.add('checked');
+          } else {
+            opt.classList.remove('selected');
+            rad.classList.remove('checked');
+          }
+        }
+      });
+
+      const submitBtn = document.getElementById('modalSubmitBtn');
+      if (submitBtn && tierData[currentSelectedTier]) {
+        submitBtn.textContent = tierData[currentSelectedTier].submitText;
+      }
+    }
+
+    function openCheckoutModal(tierKey) {
       const modal = document.getElementById('checkoutModal');
       if (modal) {
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
+
+        const successCard = document.getElementById('registrationSuccessCard');
+        const submitBtn = document.getElementById('modalSubmitBtn');
+        const tierOptions = document.querySelector('#checkoutModal .tier-options');
+
+        if (successCard) successCard.style.display = 'none';
+        if (submitBtn) submitBtn.style.display = 'block';
+        if (tierOptions) tierOptions.style.display = 'flex';
+
+        selectTier(tierKey || 'super');
       }
     }
 
@@ -2832,8 +3621,23 @@
     }
 
     function submitRegistration() {
-      alert(`[신청 완료 안내]\n\n선택하신 패키지: 여행 블로그 수익화 올인원 풀패키지 (590,000원)\n수강료 인상 전 25% 얼리버드 특별 할인 혜택이 정상 확보되었습니다!\n\nAI 프로그램 접속 링크와 VOD 12강, 전자책 201p 수강 안내가 등록된 정보로 즉시 전달됩니다.`);
-      closeCheckoutModal();
+      const t = tierData[currentSelectedTier] || tierData.super;
+      const successCard = document.getElementById('registrationSuccessCard');
+      const submitBtn = document.getElementById('modalSubmitBtn');
+      const tierOptions = document.querySelector('#checkoutModal .tier-options');
+      const successTitle = document.getElementById('successTierTitle');
+      const successDesc = document.getElementById('successTierDesc');
+
+      if (successTitle) {
+        successTitle.textContent = `${t.name} (${t.price}) 수강 신청 완료!`;
+      }
+      if (successDesc) {
+        successDesc.innerHTML = `선택하신 <strong>${t.name} (${t.price} / 12개월 ${t.monthly})</strong> 혜택이 정상 확보되었습니다.<br />AI 프로그램 접속 링크와 VOD 12강 수강 안내가 등록 정보로 즉시 전달됩니다.`;
+      }
+
+      if (tierOptions) tierOptions.style.display = 'none';
+      if (submitBtn) submitBtn.style.display = 'none';
+      if (successCard) successCard.style.display = 'block';
     }
 
     // 6. Ebook 201p TOC Modal Controls
