@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>방구석여행으로 월300 부수입 만들기 | 모찌앤잡 여행 블로그 수익화</title>
+  <title>방구석 여행으로 월300 부수입 만들기 | 모찌앤잡 여행 블로그 수익화</title>
   <meta name="description" content="前 마이리얼트립 블로그 협업 담당자가 3만 개의 글을 분석해 AI로 만든 방구석 여행 블로그 수익화 로드맵!" />
-  <meta property="og:title" content="방구석여행으로 월300 부수입 만들기 | 모찌앤잡" />
+  <meta property="og:title" content="방구석 여행으로 월300 부수입 만들기 | 모찌앤잡" />
   <meta property="og:description" content="前 마이리얼트립 블로그 협업 담당자가 3만 개의 글을 분석해 AI로 만든 방구석 여행 블로그 수익화 로드맵!" />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
@@ -314,7 +314,7 @@
       border-radius: 12px;
       border: 1px solid var(--border-sky);
       position: sticky;
-      top: 74px;
+      top: 48px;
       z-index: 30;
       overflow-x: auto;
     }
@@ -344,6 +344,231 @@
       border-radius: 20px;
       padding: 36px 32px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    /* 1. Story Intro Card (Distinct Clean White + Left Accent) */
+    .story-intro-card {
+      background: #FFFFFF;
+      border: 1.5px solid #E2E8F0;
+      border-top: 4px solid var(--accent-sky);
+      border-radius: 20px;
+      padding: 38px 32px;
+      position: relative;
+      box-shadow: 0 4px 24px rgba(2, 132, 199, 0.06);
+    }
+
+    .story-quote-mark {
+      font-size: 48px;
+      line-height: 1;
+      color: var(--accent-sky);
+      opacity: 0.35;
+      font-family: Georgia, serif;
+      margin-bottom: -6px;
+    }
+
+    .story-main-heading {
+      font-size: 26px;
+      font-weight: 900;
+      color: #0F172A;
+      letter-spacing: -0.6px;
+      line-height: 1.35;
+      margin-bottom: 22px;
+    }
+
+    .story-hook-block {
+      background: #F8FAFC;
+      border-left: 4px solid var(--accent-sky);
+      padding: 18px 20px;
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 26px;
+    }
+
+    .story-hook-text {
+      font-size: 16.5px;
+      line-height: 1.8;
+      color: #334155;
+      letter-spacing: -0.3px;
+    }
+
+    .story-hook-text strong {
+      color: var(--accent-sky);
+      font-weight: 800;
+    }
+
+    .story-sub-copy-block {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .story-para-line {
+      font-size: 16px;
+      line-height: 1.75;
+      color: #475569;
+      letter-spacing: -0.3px;
+      margin: 0;
+    }
+
+    .story-para-em {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0F172A;
+    }
+
+    .story-para-line.highlight-lead {
+      font-size: 16.5px;
+      color: #1E293B;
+      line-height: 1.7;
+    }
+
+    .story-para-line.highlight-lead strong {
+      color: #0369A1;
+      font-weight: 800;
+      background: #E0F2FE;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .story-para-cta {
+      font-size: 19px;
+      font-weight: 900;
+      color: var(--accent-sky);
+      letter-spacing: -0.3px;
+      margin-top: 6px;
+    }
+
+    /* 2. Exclusive Benefit Card (Soft Sky-Blue Tinted Gradient) */
+    .exclusive-benefits-card {
+      background: linear-gradient(145deg, #F0F9FF 0%, #E0F2FE 100%);
+      border: 2px solid #BAE6FD;
+      border-radius: 20px;
+      padding: 38px 32px;
+      box-shadow: 0 8px 30px rgba(2, 132, 199, 0.12);
+    }
+
+    .exclusive-badge-pill {
+      display: inline-block;
+      background: var(--accent-sky);
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 900;
+      padding: 4px 14px;
+      border-radius: 9999px;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);
+    }
+
+    .exclusive-main-heading {
+      font-size: 19px;
+      font-weight: 800;
+      color: #0369A1;
+      letter-spacing: -0.4px;
+      margin-bottom: 4px;
+    }
+
+    .exclusive-sub-heading {
+      font-size: 26px;
+      font-weight: 900;
+      color: #0F172A;
+      letter-spacing: -0.6px;
+      line-height: 1.35;
+      margin-bottom: 24px;
+    }
+
+    .exclusive-packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 680px) {
+      .exclusive-packages-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .package-item-box {
+      background: #FFFFFF;
+      border: 1.5px solid #BAE6FD;
+      border-radius: 14px;
+      padding: 20px 16px;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .package-item-box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(2, 132, 199, 0.16);
+      border-color: #0284C7;
+    }
+
+    .package-item-num {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 900;
+      color: #0284C7;
+      background: #E0F2FE;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .package-item-title {
+      font-size: 16px;
+      font-weight: 900;
+      color: #0F172A;
+      margin-bottom: 4px;
+    }
+
+    .package-item-sub {
+      font-size: 12.5px;
+      color: #64748B;
+      line-height: 1.4;
+    }
+
+    .exclusive-urgency-banner {
+      background: #FFFFFF;
+      border: 1.5px solid #FCA5A5;
+      border-radius: 12px;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 10px rgba(239, 68, 68, 0.08);
+    }
+
+    .urgency-fire-icon {
+      font-size: 18px;
+    }
+
+    .urgency-main-text {
+      font-size: 15.5px;
+      font-weight: 900;
+      color: #DC2626;
+      letter-spacing: -0.3px;
+    }
+
+    .urgency-sub-text {
+      font-size: 13px;
+      font-weight: 700;
+      color: #64748B;
+      background: #FEE2E2;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    /* AI Tools Section distinct soft background */
+    #section-ai-tools {
+      background: #F8FAFC;
+      border: 1.5px solid #E2E8F0;
     }
 
     .section-pill-badge {
@@ -748,6 +973,393 @@
       border-radius: 6px;
       flex-shrink: 0;
       margin-top: 2px;
+    }
+
+    /* Visual Mockups & Rich Photo Cards for Sales Copy */
+    .doc-paragraph-gap {
+      margin-bottom: 22px;
+    }
+
+    .doc-lead-copy {
+      font-size: 23px;
+      font-weight: 900;
+      color: #0F172A;
+      line-height: 1.45;
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+    }
+
+    .doc-body-copy {
+      font-size: 17px;
+      font-weight: 600;
+      color: #334155;
+      line-height: 1.75;
+      letter-spacing: -0.3px;
+      margin-bottom: 18px;
+    }
+
+    .doc-highlight-copy {
+      font-size: 19px;
+      font-weight: 800;
+      color: #0F172A;
+      line-height: 1.65;
+      background: linear-gradient(transparent 60%, #BAE6FD 60%);
+      display: inline;
+    }
+
+    .visual-showcase-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    @media (max-width: 680px) {
+      .visual-showcase-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .visual-photo-card {
+      background: #F8FAFC;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+    }
+
+    .visual-photo-header {
+      background: #0F172A;
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .visual-photo-body {
+      padding: 20px;
+    }
+
+    /* Program Mockup Window */
+    .program-window-mockup {
+      background: #FFFFFF;
+      border: 1.5px solid #CBD5E1;
+      border-radius: 14px;
+      overflow: hidden;
+      margin-top: 14px;
+      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.08);
+    }
+
+    .window-topbar {
+      background: #1E293B;
+      color: #F8FAFC;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .window-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .window-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .window-content-area {
+      padding: 18px;
+      background: #F8FAFC;
+    }
+
+    .keyword-table-mock {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      background: #FFFFFF;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #E2E8F0;
+    }
+
+    .keyword-table-mock th {
+      background: #E0F2FE;
+      color: #0369A1;
+      font-weight: 800;
+      padding: 10px 12px;
+      text-align: left;
+    }
+
+    .keyword-table-mock td {
+      padding: 10px 12px;
+      border-top: 1px solid #F1F5F9;
+      color: #334155;
+      font-weight: 600;
+    }
+
+    /* Earnings Proof Dashboard Mockup */
+    .profit-proof-card {
+      background: #FFFFFF;
+      border: 2px solid #BAE6FD;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 18px 0 28px;
+      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.08);
+    }
+
+    .profit-proof-header {
+      background: linear-gradient(90deg, #0284C7, #0EA5E9);
+      color: #FFFFFF;
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .profit-proof-body {
+      padding: 20px;
+    }
+
+    /* KakaoTalk Review Grid */
+    .kakao-review-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 680px) {
+      .kakao-review-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .kakao-chat-card {
+      background: #BACEE0;
+      border-radius: 16px;
+      padding: 18px 16px;
+      border: 1px solid #94A3B8;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .kakao-chat-header {
+      font-size: 12px;
+      font-weight: 800;
+      color: #1E293B;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+      padding-bottom: 8px;
+    }
+
+    .kakao-bubble-white {
+      background: #FFFFFF;
+      color: #0F172A;
+      padding: 12px 14px;
+      border-radius: 0 14px 14px 14px;
+      font-size: 13.5px;
+      line-height: 1.55;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      align-self: flex-start;
+      max-width: 92%;
+    }
+
+    .kakao-bubble-yellow {
+      background: #FEE500;
+      color: #0F172A;
+      padding: 10px 14px;
+      border-radius: 14px 0 14px 14px;
+      font-size: 13px;
+      line-height: 1.5;
+      font-weight: 700;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      align-self: flex-end;
+      max-width: 85%;
+    }
+
+    /* Final CTA Section & Blinking Button */
+    .final-cta-card {
+      background: linear-gradient(145deg, #0F172A 0%, #1E293B 100%);
+      color: #FFFFFF;
+      border-radius: 22px;
+      padding: 44px 32px;
+      text-align: center;
+      border: 2px solid #38BDF8;
+      box-shadow: 0 16px 40px rgba(2, 132, 199, 0.25);
+    }
+
+    .final-benefit-summary-box {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 26px 0;
+      text-align: left;
+    }
+
+    @keyframes ctaBlinkPulse {
+      0%, 100% {
+        transform: scale(1);
+        background: linear-gradient(90deg, #0284C7 0%, #0EA5E9 100%);
+        box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.8), 0 10px 25px rgba(2, 132, 199, 0.5);
+      }
+      50% {
+        transform: scale(1.025);
+        background: linear-gradient(90deg, #F43F5E 0%, #FF5E00 100%);
+        box-shadow: 0 0 28px 8px rgba(244, 63, 94, 0.55), 0 12px 30px rgba(244, 63, 94, 0.5);
+      }
+    }
+
+    .blinking-final-cta-btn {
+      width: 100%;
+      border: 2px solid #FFFFFF;
+      border-radius: 16px;
+      padding: 20px 24px;
+      font-size: 18px;
+      font-weight: 900;
+      color: #FFFFFF;
+      cursor: pointer;
+      letter-spacing: -0.4px;
+      line-height: 1.4;
+      animation: ctaBlinkPulse 1.4s infinite ease-in-out;
+      transition: transform 0.2s;
+    }
+
+    .blinking-final-cta-btn:hover {
+      transform: scale(1.03);
+    }
+
+    /* Interactive User Photo Upload Slots */
+    .photo-pair-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      max-width: 620px;
+      margin: 16px auto;
+      align-items: start;
+    }
+
+    .photo-pair-grid .photo-upload-slot {
+      margin: 0;
+      max-width: 100%;
+    }
+
+    .photo-pair-grid .photo-upload-placeholder {
+      padding: 24px 12px;
+    }
+
+    .photo-upload-slot {
+      position: relative;
+      width: 100%;
+      max-width: 460px;
+      margin: 14px auto;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+
+    .photo-upload-placeholder {
+      border: 2px dashed #7DD3FC;
+      background: #F0F9FF;
+      border-radius: 14px;
+      padding: 36px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .photo-upload-placeholder:hover,
+    .photo-upload-slot.dragover .photo-upload-placeholder {
+      background: #E0F2FE;
+      border-color: #0284C7;
+      transform: translateY(-1px);
+    }
+
+    .photo-upload-icon {
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .photo-upload-title {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: #0369A1;
+    }
+
+    .photo-upload-sub {
+      font-size: 12px;
+      color: #64748B;
+      font-weight: 600;
+    }
+
+    .photo-uploaded-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #E2E8F0;
+      background: #FFFFFF;
+    }
+
+    .photo-uploaded-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .photo-slot-actions {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 6px;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      z-index: 10;
+    }
+
+    .photo-uploaded-wrapper:hover .photo-slot-actions {
+      opacity: 1;
+    }
+
+    .photo-action-btn {
+      background: rgba(15, 23, 42, 0.85);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+      backdrop-filter: blur(4px);
+    }
+
+    .photo-action-btn:hover {
+      background: #0284C7;
+    }
+
+    .photo-action-btn.delete:hover {
+      background: #DC2626;
     }
 
     /* RIGHT STICKY FLOATING SIDEBAR (가격 + 커리큘럼 + 슈퍼얼리버드 단독, 슬림 280px) */
@@ -1255,8 +1867,7 @@
     <aside class="top-sky-alert-bar" aria-label="슈퍼얼리버드 특가 마감 안내">
       <div class="top-sky-alert-inner">
         <span class="top-alert-pill">25% 할인!</span>
-        <span>슈퍼 얼리버드 마감,수강료 인상까지</span>
-        <span class="top-alert-timer" id="topCountdownTimer">0일 14:28:45 남음</span>
+        <span>수강료가 곧 인상돼요! (슈퍼얼리버드 마감 직전)</span>
       </div>
     </aside>
 
@@ -1289,7 +1900,7 @@
             </div>
 
             <h1 class="lecture-main-title">
-              방구석여행으로 <span class="highlight-sky">월300 부수입</span> 만들기
+              방구석 여행으로 <span class="highlight-sky">월300 부수입</span> 만들기
             </h1>
 
             <p class="lecture-sub-desc">
@@ -1301,356 +1912,377 @@
               <div class="key-strip-item">🎬 <strong>총 12강 VOD</strong> (평생 무제한 수강)</div>
               <div class="key-strip-item">🤖 <strong>AI 3종 프로그램</strong> (영구 소장)</div>
               <div class="key-strip-item">📘 <strong>전자책 201p</strong> (실전 바이블)</div>
-              <div class="key-strip-item">📱 <strong>PC & 모바일</strong> 자유 수강</div>
+              <div class="key-strip-item">📱 <strong>PC & 모바일</strong> 무제한 수강</div>
             </div>
           </div>
 
-          <!-- Sticky Section Navigation Tabs -->
-          <nav class="content-nav-tabs" aria-label="강의 상세 탭">
-            <a href="#section-checklist" class="nav-tab-link active">자가진단</a>
-            <a href="#section-ai-tools" class="nav-tab-link">AI 프로그램</a>
-            <a href="#section-curriculum" class="nav-tab-link">커리큘럼(12강)</a>
-            <a href="#section-instructor" class="nav-tab-link">강사 소개</a>
-            <a href="#section-proof" class="nav-tab-link">실제 성과</a>
-            <a href="#section-qa" class="nav-tab-link">고민 해결 Q&A</a>
-            <a href="#section-faq" class="nav-tab-link">FAQ</a>
-          </nav>
+          <!-- ================= // 도입1 ================= -->
+          <section class="content-box-card story-intro-card" id="section-story">
+            <div class="doc-paragraph-gap">
+              <h2 class="doc-lead-copy">
+                매달 꽂히는 제2의 월급,<br />
+                옛날에 다녀온 여행 사진으로<br />
+                <span class="highlight-sky">15분만에 쓴 글이 대신 벌어다 줬어요!</span>
+              </h2>
+            </div>
 
-          <!-- 1. 자가진단 체크리스트 (Problem Checklist) -->
-          <section class="content-box-card" id="section-checklist">
-            <span class="section-pill-badge">CHECKLIST</span>
-            <h2 class="section-heading-h2">해당하는 항목을 체크해보세요</h2>
-            <p class="section-desc-p">하나라도 해당된다면, 모찌앤잡의 방구석 여행 블로그 수익화가 가장 확실한 답입니다.</p>
+            <div class="doc-paragraph-gap">
+              <p class="doc-body-copy">
+                여행 블로그로 돈 벌려면<br />
+                캐리어 끌고 여행 다녀야 한다고 생각하셨나요?
+              </p>
+            </div>
 
-            <div class="check-items-list" id="checklistContainer">
-              <div class="check-interactive-item checked" onclick="toggleCheckItem(this)">
-                <div class="check-box-circle">✓</div>
-                <div class="check-item-text">1. 부업을 찾고 있는데 직장·육아로 하루 1시간밖에 없다.</div>
-              </div>
-              <div class="check-interactive-item checked" onclick="toggleCheckItem(this)">
-                <div class="check-box-circle">✓</div>
-                <div class="check-item-text">2. 열심히 블로그 글 올려도 한 달 수익이 30만 원도 안 된다.</div>
-              </div>
-              <div class="check-interactive-item checked" onclick="toggleCheckItem(this)">
-                <div class="check-box-circle">✓</div>
-                <div class="check-item-text">3. 체험단, 원고료 말고 통장에 실제 현금이 찍혔으면 좋겠다.</div>
-              </div>
-              <div class="check-interactive-item" onclick="toggleCheckItem(this)">
-                <div class="check-box-circle">✓</div>
-                <div class="check-item-text">4. 여행은 좋아하지만 인플루언서는 못 할 것 같다.</div>
-              </div>
-              <div class="check-interactive-item checked" onclick="toggleCheckItem(this)">
-                <div class="check-box-circle">✓</div>
-                <div class="check-item-text">5. 리스크 없는 확실한 N잡을 찾고있다.</div>
-              </div>
-              <div class="check-interactive-item" onclick="toggleCheckItem(this)">
-                <div class="check-box-circle">✓</div>
-                <div class="check-item-text">6. 글 써도 수익이 없어서 블로그 방향을 완전히 바꾸고 싶다.</div>
-              </div>
+            <div class="doc-paragraph-gap">
+              <p class="doc-body-copy" style="margin-bottom: 8px; color: #0284C7; font-weight: 800;">
+                아직 뭘 모르시는군요!
+              </p>
+              <p class="doc-lead-copy" style="font-size: 21px; margin-bottom: 0;">
+                <span class="doc-highlight-copy">핸드폰에 자고 있는 여행 사진이 직장인 월급이 됩니다</span>
+              </p>
+            </div>
+
+            <!-- 사진 슬롯 2개 가로 나란히 (도입1) -->
+            <div class="photo-pair-grid">
+              <div class="photo-upload-slot" data-photo-slot="slot-intro1-1" data-slot-label="도입1 사진 ① 삽입하기"></div>
+              <div class="photo-upload-slot" data-photo-slot="slot-intro1-2" data-slot-label="도입1 사진 ② 삽입하기"></div>
             </div>
           </section>
 
-          <!-- 2. AI 프로그램 3종 풀세트 소개 (FEATURE 01, 02, 03) -->
+          <!-- ================= // 도입-세부설명 ================= -->
+          <section class="content-box-card" id="section-intro-detail" style="background: #F8FAFC; border: 1.5px solid #BAE6FD;">
+            <div class="doc-paragraph-gap">
+              <h2 class="doc-lead-copy">
+                직접 여행가지 않아도 되고,<br />
+                예전에 다녀온 여행사진으로도 돈 벌 수 있는 이유,<br />
+                <span class="highlight-sky">바로 정보성 글이기 때문!</span>
+              </h2>
+            </div>
+
+            <div class="doc-paragraph-gap">
+              <p class="doc-body-copy">
+                요즘 잘팔리는 여행 상품 고른 후<br />
+                AI 프로그램이 알아서 글 써주고<br />
+                <strong>상품 링크와 함께 게시하면 끝!</strong>
+              </p>
+            </div>
+
+            <!-- 사진 슬롯 2개 가로 나란히 (도입-세부설명) -->
+            <div class="photo-pair-grid">
+              <div class="photo-upload-slot" data-photo-slot="slot-intro2-1" data-slot-label="도입-세부설명 사진 ① 삽입하기"></div>
+              <div class="photo-upload-slot" data-photo-slot="slot-intro2-2" data-slot-label="도입-세부설명 사진 ② 삽입하기"></div>
+            </div>
+
+            <div style="text-align: center; background: #FFFFFF; border: 2px solid #0284C7; border-radius: 16px; padding: 22px; margin-top: 18px;">
+              <p style="font-size: 20px; font-weight: 900; color: #0F172A; margin-bottom: 6px;">
+                모찌앤잡만의 여행 블로그 수익화 치트키!
+              </p>
+              <p style="font-size: 22px; font-weight: 900; color: #0284C7; margin: 0;">
+                지금 공개합니다
+              </p>
+            </div>
+          </section>
+
+          <!-- ================= // 혜택 ================= -->
+          <section class="content-box-card exclusive-benefits-card" id="section-exclusive-benefit">
+            <h2 class="exclusive-main-heading">
+              이 페이지에서 결제 하시는 분들께만 드리는 혜택
+            </h2>
+            <div class="exclusive-sub-heading">
+              여행 블로그 수익화 <span class="highlight-sky">풀패키지 제공!!</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+              <div style="background: #FFFFFF; border: 1.5px solid #BAE6FD; border-radius: 12px; padding: 16px 20px; font-size: 16px; font-weight: 800; color: #0F172A;">
+                <span style="color: #0284C7; font-weight: 900; margin-right: 6px;">[1]</span> 전자책 201p - 여행 블로그 수익화 실전 노하우 전자책
+              </div>
+              <div style="background: #FFFFFF; border: 1.5px solid #BAE6FD; border-radius: 12px; padding: 16px 20px; font-size: 16px; font-weight: 800; color: #0F172A;">
+                <span style="color: #0284C7; font-weight: 900; margin-right: 6px;">[2]</span> VOD 12강 - 평생 무제한 수강 가능
+              </div>
+              <div style="background: #FFFFFF; border: 1.5px solid #BAE6FD; border-radius: 12px; padding: 16px 20px; font-size: 16px; font-weight: 800; color: #0F172A;">
+                <span style="color: #0284C7; font-weight: 900; margin-right: 6px;">[3]</span> 모찌앤잡 AI프로그램 3종 풀세트
+              </div>
+            </div>
+
+            <div class="exclusive-urgency-banner">
+              <span class="urgency-main-text">현재 자리 빠르게 마감중 !</span>
+            </div>
+          </section>
+
+          <!-- ================= // AI프로그램 강조 ================= -->
           <section class="content-box-card" id="section-ai-tools">
-            <span class="section-pill-badge">여기서 끝이 아니에요!</span>
-            <h2 class="section-heading-h2">모찌앤잡이 직접 개발한 여행 특화 AI 3종 프로그램</h2>
-            <p class="section-desc-p">글쓰기 막막함을 15분 만에 끝내는 자체 개발 자동화 소프트웨어를 평생 영구 소장 제공합니다.</p>
+            <div class="doc-paragraph-gap">
+              <p class="doc-body-copy" style="font-size: 18px; color: #0284C7; font-weight: 800; margin-bottom: 12px;">
+                머리 쥐어짜며 2시간씩 글 쓰지 말고,<br />
+                이제 방구석에서 넷플릭스 보면서 AI한테 시키세요!
+              </p>
+              <h2 class="section-heading-h2" style="font-size: 23px; margin-bottom: 8px;">
+                모찌앤잡이 직접 개발한 여행 블로그 특화 AI프로그램 3종 모두 제공!
+              </h2>
+              <p class="section-desc-p" style="margin-bottom: 0; font-weight: 700; color: #334155;">
+                前 마이리얼트립 블로그 협업 담당자가 3만 개의 글을 분석해 만들었어요
+              </p>
+            </div>
 
-            <div class="ai-features-grid">
+            <div class="ai-features-grid" style="margin-top: 24px;">
               
-              <!-- Feature 01 -->
+              <!-- [1] 지금 인기 있는 여행 키워드 추천 -->
               <div class="ai-feature-card">
-                <span class="ai-feature-tag">FEATURE 01</span>
-                <h3 class="ai-feature-title">지금 인기 있는 여행 키워드 실시간 추천</h3>
+                <h3 class="ai-feature-title">[1] 지금 인기 있는 여행 키워드 추천</h3>
                 <p class="ai-feature-desc">
-                  검색량 대비 경쟁 강도가 낮아 상위 노출되는 알짜 키워드를 자동으로 찾아줍니다.
+                  클릭부터 실제 구매까지 잘 나오는 돈 되는 여행 글감을 알아서 추천해줘요
                 </p>
-                <div class="ai-feature-visual-bar">
-                  <span>⚡ 실시간 롱테일 키워드 1초 추출 알고리즘 탑재</span>
-                </div>
+                <div class="photo-upload-slot" data-photo-slot="slot-ai-1" data-slot-label="[1] 여행 키워드 추천 프로그램 사진 삽입하기"></div>
               </div>
 
-              <!-- Feature 02 -->
+              <!-- [2] 15분만에 완성되는 여행 특화 글쓰기 AI -->
               <div class="ai-feature-card">
-                <span class="ai-feature-tag">FEATURE 02</span>
-                <h3 class="ai-feature-title">클릭 몇 번으로 15분 만에 완성되는 여행 특화 글쓰기 AI</h3>
+                <h3 class="ai-feature-title">[2] 15분만에 완성되는 여행 특화 글쓰기 AI</h3>
                 <p class="ai-feature-desc">
-                  오사카 맛집, 방콕 투어, 제주 숙소 등 어떤 주제든 AI 프로그램으로 15분만에 완성합니다. 어색한 번역투 없이 네이버 검색 로봇이 선호하는 구어체와 체류 시간 극대화 서식을 구현합니다.
+                  여행 상품 내용 복사해서 붙여넣으면 끝!<br />
+                  오사카 맛집, 방콕 투어, 제주 숙소 등 어떤 주제든 내가 원하는 문체로 글을 써줘요
                 </p>
-                <div class="ai-feature-visual-bar">
-                  <span>📝 15분 컷 고수익 예약 전환 포맷 자동 생성</span>
-                </div>
+                <div class="photo-upload-slot" data-photo-slot="slot-ai-2" data-slot-label="[2] 여행 특화 글쓰기 AI 사진 삽입하기"></div>
               </div>
 
-              <!-- Feature 03 -->
+              <!-- [3] 블로그 게시글까지 프로그램이 자동으로 작성! -->
               <div class="ai-feature-card">
-                <span class="ai-feature-tag">FEATURE 03</span>
-                <h3 class="ai-feature-title">모바일 화면에 최적화된 블로그 가독성 포맷 자동 맞춤</h3>
+                <h3 class="ai-feature-title">[3] 블로그 게시글까지 프로그램이 자동으로 작성!</h3>
                 <p class="ai-feature-desc">
-                  독자의 92%는 스마트폰으로 봅니다. 줄바꿈, 폰트 강조, 예약 링크 버튼 배치까지 모바일 엄지손가락 클릭률을 극대화하는 포맷으로 자동 변환해 줍니다.
+                  AI가 모바일 화면에 최적화된 블로그 가독성 포맷으로 네이버 게시글까지 직접 작성해요
                 </p>
-                <div class="ai-feature-visual-bar">
-                  <span>📱 스마트폰 독자 전환율 3.8배 상승 레이아웃</span>
-                </div>
+                <div class="photo-upload-slot" data-photo-slot="slot-ai-3" data-slot-label="[3] 블로그 게시글 자동 작성 프로그램 사진 삽입하기"></div>
               </div>
 
             </div>
+
+            <p style="margin-top: 20px; text-align: center; font-size: 14px; font-weight: 800; color: #DC2626; background: #FEF2F2; padding: 12px; border-radius: 10px; border: 1px solid #FECACA;">
+              *본 혜택은 이 페이지에서 결제하시는 분들께만 드리는 혜택입니다
+            </p>
           </section>
 
-          <!-- 3. 상세 커리큘럼 (12강 전체 목차 안내) -->
-          <section class="content-box-card" id="section-curriculum">
-            <span class="section-pill-badge">CURRICULUM</span>
-            <h2 class="section-heading-h2">방구석 여행 블로그 수익화 VOD 12강 커리큘럼</h2>
-            <p class="section-desc-p">기초 세팅부터 월 300 파이프라인 자동화까지, 모찌앤잡만의 실전 커리큘럼 전체 구성입니다.</p>
+          <!-- ================= // 체크리스트 ================= -->
+          <section class="content-box-card" id="section-checklist">
+            <h2 class="section-heading-h2">해당하는 항목을 체크해보세요</h2>
 
-            <div class="curriculum-accordion-list">
-              
-              <!-- Chapter 1 -->
-              <div class="curriculum-chapter">
-                <div class="curriculum-chapter-header" onclick="toggleChapter(this)">
-                  <div class="chapter-title-text">
-                    <span class="chapter-tag">PART 1</span>
-                    <span>여행 블로그 수익화 기본 메커니즘</span>
-                  </div>
-                  <span class="chapter-lesson-count">2개 강의 ▼</span>
-                </div>
-                <div class="curriculum-chapter-body">
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>01강. 애드포스트를 버리고 제휴 수익으로 전환해야 하는 이유</strong> - 조회수 100만 유튜버보다 알짜 키워드 블로거가 돈을 더 버는 원리</div>
-                  </div>
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>02강. 구매 전환율 300% 높이는 예약 심리학</strong> - 방문자가 링크를 클릭하지 않고는 못 배기는 심리 트리거</div>
-                  </div>
-                </div>
+            <div class="check-items-list" id="checklistContainer" style="margin-top: 18px;">
+              <div class="check-interactive-item checked" onclick="toggleCheckItem(this)">
+                <div class="check-box-circle">✓</div>
+                <div class="check-item-text">1.부업을 찾고 있는데 직장, 육아로 하루 1시간 밖에 없다</div>
               </div>
-
-              <!-- Chapter 2 -->
-              <div class="curriculum-chapter">
-                <div class="curriculum-chapter-header" onclick="toggleChapter(this)">
-                  <div class="chapter-title-text">
-                    <span class="chapter-tag">PART 2</span>
-                    <span>3만 개 빅데이터 롱테일 키워드 추출 공식</span>
-                  </div>
-                  <span class="chapter-lesson-count">3개 강의 ▼</span>
-                </div>
-                <div class="curriculum-chapter-body">
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>03강. 대형 인플루언서를 피하고 상위 노출 먹는 롱테일 공식</strong> - 검색량 1,000~5,000대 황금 키워드 발굴법</div>
-                  </div>
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>04강. 사계절 돈 되는 국내/해외 여행 키워드 지도</strong> - 봄 벚꽃, 여름 바캉스, 겨울 온천 및 황금연휴 공략법</div>
-                  </div>
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>05강. 준최 2등급 블로그도 단번에 노출되는 틈새 타겟팅</strong> - 블로그 지수를 역전하는 제목 짓기 비법</div>
-                  </div>
-                </div>
+              <div class="check-interactive-item checked" onclick="toggleCheckItem(this)">
+                <div class="check-box-circle">✓</div>
+                <div class="check-item-text">2.열심히 블로그 글 올려도 한 달 수익이 30만원도 안 된다</div>
               </div>
-
-              <!-- Chapter 3 -->
-              <div class="curriculum-chapter">
-                <div class="curriculum-chapter-header" onclick="toggleChapter(this)">
-                  <div class="chapter-title-text">
-                    <span class="chapter-tag">PART 3</span>
-                    <span>안 가본 곳도 완벽하게 쓰는 큐레이션 글쓰기</span>
-                  </div>
-                  <span class="chapter-lesson-count">3개 강의 ▼</span>
-                </div>
-                <div class="curriculum-chapter-body">
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>06강. 여행 경험 0이어도 현지인처럼 쓰는 5단계 정보 수집법</strong> - 구글맵, 현지 예약 사이트 리뷰를 내 글 자산으로</div>
-                  </div>
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>07강. 클릭률 폭발하는 CTA 배치와 배너 구성</strong> - 글의 상단, 중단, 하단 최적 클릭 위치 설계</div>
-                  </div>
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>08강. 저작권 문제없는 고화질 여행 이미지 수집 및 편집 비법</strong> - 네이버 스마트에디터 최적화 이미지 가공</div>
-                  </div>
-                </div>
+              <div class="check-interactive-item checked" onclick="toggleCheckItem(this)">
+                <div class="check-box-circle">✓</div>
+                <div class="check-item-text">3.체험단,원고료 말고 통장에 실제 현금이 찍혔으면 좋겠다</div>
               </div>
-
-              <!-- Chapter 4 -->
-              <div class="curriculum-chapter">
-                <div class="curriculum-chapter-header" onclick="toggleChapter(this)">
-                  <div class="chapter-title-text">
-                    <span class="chapter-tag">PART 4</span>
-                    <span>AI 프로그램으로 15분 만에 탈고하기</span>
-                  </div>
-                  <span class="chapter-lesson-count">2개 강의 ▼</span>
-                </div>
-                <div class="curriculum-chapter-body">
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>09강. 모찌앤잡 전용 AI 자동화 도구 3종 실전 마스터</strong> - 키워드 추출부터 본문 초안, 탈고까지 원스톱</div>
-                  </div>
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>10강. 검색 로봇 패널티 100% 우회하는 자연스러운 원고 구성</strong> - 구어체, 맞춤법, 가독성 최적 변환</div>
-                  </div>
-                </div>
+              <div class="check-interactive-item checked" onclick="toggleCheckItem(this)">
+                <div class="check-box-circle">✓</div>
+                <div class="check-item-text">4. 여행은 좋아하지만 인플루언서는 못할 것 같다</div>
               </div>
-
-              <!-- Chapter 5 -->
-              <div class="curriculum-chapter">
-                <div class="curriculum-chapter-header" onclick="toggleChapter(this)">
-                  <div class="chapter-title-text">
-                    <span class="chapter-tag">PART 5</span>
-                    <span>글 1편으로 12개월 연금형 수익 파이프라인</span>
-                  </div>
-                  <span class="chapter-lesson-count">2개 강의 ▼</span>
-                </div>
-                <div class="curriculum-chapter-body">
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>11강. 한 번 써두면 1년 내내 자동 입금되는 연금형 글 구조화</strong> - 시즌 업데이트 5분 관리법</div>
-                  </div>
-                  <div class="lesson-item">
-                    <span class="lesson-icon">▶</span>
-                    <div><strong>12강. 호텔 협찬, 무료 여행 제안서 작성법 및 정산 관리</strong> - 협업 요청을 끌어당기는 블로그 브랜딩 A to Z</div>
-                  </div>
-                </div>
+              <div class="check-interactive-item checked" onclick="toggleCheckItem(this)">
+                <div class="check-box-circle">✓</div>
+                <div class="check-item-text">5. 리스크 없는 확실한 N잡을 찾고 있다</div>
               </div>
+            </div>
 
+            <div style="margin-top: 22px; background: #F0F9FF; border: 1.5px solid #0284C7; border-radius: 14px; padding: 18px 20px; text-align: center;">
+              <p style="font-size: 16.5px; font-weight: 900; color: #0F172A; margin: 0;">
+                하나라도 해당된다면, <span style="color: #0284C7;">모찌앤잡의 방구석 여행 블로그 강의</span>가 확실한 답입니다.
+              </p>
             </div>
           </section>
 
-          <!-- 4. 강사 소개 (모찌앤잡) -->
+          <!-- ================= // 강사 프로필 & // 강사스토리 ================= -->
           <section class="content-box-card" id="section-instructor">
-            <span class="section-pill-badge">INSTRUCTOR</span>
-            <h2 class="section-heading-h2">안녕하세요, 방구석 여행글쓰기로 월 400 버는 모찌앤잡입니다.</h2>
-            <p class="section-desc-p">AI로 하루 한시간 투자, 월 400 찍고 퇴사한 실전 노하우를 그대로 전해드립니다.</p>
+            <h2 class="section-heading-h2" style="margin-bottom: 18px;">
+              안녕하세요. 방구석 여행 글쓰기로 월 300 버는 모찌앤잡입니다!
+            </h2>
 
-            <div class="instructor-flex-profile">
-              <div class="instructor-badge-card">
-                <div class="instructor-icon-huge">✈️</div>
-                <div class="inst-name">모찌앤잡 (Mozzi & Job)</div>
-                <div class="inst-role">前 마이리얼트립 파트너팀 매니저<br />크몽 전속 여행 블로그 No.1</div>
+            <!-- 강사 프로필 사진 슬롯 -->
+            <div class="photo-upload-slot" data-photo-slot="slot-profile-1" data-slot-label="강사 프로필 사진 삽입하기"></div>
+
+            <div class="timeline-story-list" style="margin-top: 20px; margin-bottom: 28px;">
+              <div class="timeline-item">
+                <div class="timeline-item-title">前 마이리얼트립 파트너팀 매니저 / 크몽 전속 여행 블로그 No.1 전문가</div>
               </div>
-
-              <div class="timeline-story-list">
-                <div class="timeline-item">
-                  <div class="timeline-item-title">국가직 공무원, 박봉을 벗어나기 위해 블로그 시작</div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-item-title">블로그 실력으로 마이리얼트립 파트너 담당자로 취업</div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-item-title">블로그 수입이 월급 추월 ➔ 퇴사 후 현재 월 수익 000만원, 누적 수강생 000명</div>
-                </div>
+              <div class="timeline-item">
+                <div class="timeline-item-title">국가직 공무원, 박봉을 벗어나기 위해 블로그 시작</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item-title">블로그 실력으로 마이리얼 트립 파트너 담당자로 이직</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item-title" style="color: #0284C7;">블로그 수익이 월급 추월 -> 퇴사 후 현재 월 수익 300~400만원 유지중</div>
               </div>
             </div>
 
-            <div class="screenshot-clean-box">
-              <span style="font-size: 28px;">📊</span>
-              <strong>[실제 강사 수익 자료]</strong>
-              <span style="font-size: 13px; color: var(--text-muted); font-weight: normal;">마이리얼트립 파트너 및 여행 제휴 플랫폼 실시간 정산 내역 증빙</span>
+            <!-- // 강사스토리 -->
+            <div style="border-top: 2px dashed #E2E8F0; padding-top: 28px;">
+              
+              <p class="doc-lead-copy" style="font-size: 20px; margin-bottom: 10px;">
+                출퇴근길 지옥철..
+              </p>
+
+              <div style="margin-top: 12px;">
+                <p class="doc-lead-copy" style="font-size: 20px; margin-bottom: 12px;">
+                  열심히 일하지만 통장에 찍히는 건 ‘귀여운 월급’
+                </p>
+                <p class="doc-body-copy">
+                  '카드값 내고 나면 남는 게 없네…'<br />
+                  ‘내 30대, 내 평생을 이렇게 돈에 쪼들리며 살아야 하나?'<br />
+                  지푸라기라도 잡는 심정으로 퇴근 후 노트북을 켰고<br />
+                  그렇게 방구석에서 시작한 '여행 블로그'로<br />
+                  <strong style="color: #0284C7; font-size: 19px;">이제는 퇴사후 월 300만원 벌며 공짜로 여행다니고 있어요!</strong>
+                </p>
+              </div>
+
+              <!-- 마이리얼트립 최근 실제 수익 내역 -->
+              <div style="margin-top: 28px;">
+                <h3 style="font-size: 18px; font-weight: 900; color: #0F172A; margin-bottom: 8px;">
+                  마이리얼트립 최근 실제 수익 내역
+                </h3>
+                <div class="photo-upload-slot" data-photo-slot="slot-story-mrt" data-slot-label="마이리얼트립 최근 실제 수익 내역 사진 삽입하기"></div>
+              </div>
+
+              <!-- 여기어때 최근 실제 수익 내역 -->
+              <div style="margin-top: 28px;">
+                <h3 style="font-size: 18px; font-weight: 900; color: #0F172A; margin-bottom: 8px;">
+                  여기어때 최근 실제 수익 내역
+                </h3>
+                <div class="photo-upload-slot" data-photo-slot="slot-story-yeogi" data-slot-label="여기어때 최근 실제 수익 내역 사진 삽입하기"></div>
+              </div>
+
+              <!-- 매일 끊임없이 들어오는 수익! -->
+              <div style="margin-top: 28px;">
+                <h3 style="font-size: 18px; font-weight: 900; color: #0F172A; margin-bottom: 8px;">
+                  매일 끊임없이 들어오는 수익!
+                </h3>
+                <div class="photo-upload-slot" data-photo-slot="slot-story-daily" data-slot-label="매일 끊임없이 들어오는 수익 사진 삽입하기"></div>
+              </div>
+
+              <!-- 공무원 면직 -> 마이리얼트립 이직 후 여행블로그로 월급뛰어넘고 퇴사 -->
+              <div style="margin-top: 28px;">
+                <h3 style="font-size: 18px; font-weight: 900; color: #0F172A; margin-bottom: 8px;">
+                  공무원 면직 ->  마이리얼트립 이직 후 여행블로그로 월급뛰어넘고 퇴사
+                </h3>
+                <div class="photo-pair-grid">
+                  <div class="photo-upload-slot" data-photo-slot="slot-story-resign-1" data-slot-label="공무원 면직 / 마이리얼트립 이직 사진 ① 삽입하기"></div>
+                  <div class="photo-upload-slot" data-photo-slot="slot-story-resign-2" data-slot-label="공무원 면직 / 마이리얼트립 이직 사진 ② 삽입하기"></div>
+                </div>
+              </div>
+
+              <!-- 이제는 협찬받아 공짜 해외여행, 공짜 숙소까지! -->
+              <div style="margin-top: 28px;">
+                <h3 style="font-size: 18px; font-weight: 900; color: #0F172A; margin-bottom: 8px;">
+                  이제는 협찬받아 공짜 해외여행, 공짜 숙소까지!
+                </h3>
+                <div class="photo-pair-grid">
+                  <div class="photo-upload-slot" data-photo-slot="slot-story-sponsor-1" data-slot-label="협찬 해외여행 / 숙소 사진 ① 삽입하기"></div>
+                  <div class="photo-upload-slot" data-photo-slot="slot-story-sponsor-2" data-slot-label="협찬 해외여행 / 숙소 사진 ② 삽입하기"></div>
+                </div>
+              </div>
+
+              <div style="text-align: center; background: #E0F2FE; border-radius: 14px; padding: 20px; margin-top: 24px;">
+                <p style="font-size: 19px; font-weight: 900; color: #0369A1; margin-bottom: 4px;">
+                  여러분도 똑같이 하실 수 있어요
+                </p>
+                <p style="font-size: 16px; font-weight: 800; color: #0F172A; margin: 0;">
+                  아래 내용을 잘 읽어보세요!
+                </p>
+              </div>
+
             </div>
           </section>
 
-          <!-- 5. 실제 수강생 성과 (Proof) -->
-          <section class="content-box-card" id="section-proof">
-            <span class="section-pill-badge">실제 수강생 성과</span>
-            <h2 class="section-heading-h2">정말 누구나 쉽게 할 수 있는 부업이냐고요?</h2>
-            <p class="section-desc-p">직접 경험한 수강생들의 진솔한 후기와 정산 인증을 확인하세요.</p>
-
-            <div class="student-review-box">
-              <div class="review-user-row">
-                <span class="review-user-name">30대 직장인 김*우 수강생 (퇴근 후 30분 운영)</span>
-                <span class="review-stars">★★★★★</span>
-              </div>
-              <p class="review-content-text">
-                "퇴근하고 녹초가 되어도 AI 프로그램이 키워드랑 본문 구조를 다 짜주니까 하루 20분 만에 글 1편씩 올렸습니다. 놀랍게도 첫 글 올린 지 4일 만에 투어 예약 3건이 들어와 첫 정산 48만 원 찍혔어요!"
-              </p>
+          <!-- ================= // 그래서 어떻게 돈버는지 ================= -->
+          <section class="content-box-card" id="section-how-it-works" style="background: #F8FAFC; border: 2px solid #0284C7;">
+            <div style="margin-bottom: 24px;">
+              <h3 style="font-size: 19px; font-weight: 900; color: #0F172A; margin-bottom: 10px;">
+                지금 인기 있는 여행 키워드 프로그램으로 찾고
+              </h3>
+              <div class="photo-upload-slot" data-photo-slot="slot-how-1" data-slot-label="키워드 프로그램 화면 사진 삽입하기"></div>
             </div>
 
-            <div class="student-review-box">
-              <div class="review-user-row">
-                <span class="review-user-name">육아맘 이*진 수강생 (최근 2년간 해외여행 0회)</span>
-                <span class="review-stars">★★★★★</span>
-              </div>
-              <p class="review-content-text">
-                "애 키우느라 집 밖도 못 나가는데 무슨 여행 블로그냐 싶었거든요. 그런데 안 가본 곳도 큐레이션 포맷에 넣으니까 현지인 가이드처럼 글이 술술 써집니다. 지난달 월 120만 원 부수입 통장에 꽂혔습니다."
-              </p>
+            <div style="margin-bottom: 24px;">
+              <h3 style="font-size: 19px; font-weight: 900; color: #0F172A; margin-bottom: 10px; line-height: 1.5;">
+                여행사 홈페이지에 나와있는 여행상품 내용 복사해서 프로그램에 붙여넣은 후 글 자동생성 버튼 클릭
+              </h3>
+              <div class="photo-upload-slot" data-photo-slot="slot-how-2" data-slot-label="글 자동생성 화면 사진 삽입하기"></div>
             </div>
 
-            <div class="screenshot-clean-box" style="margin-top: 20px;">
-              <span style="font-size: 28px;">💬</span>
-              <strong>[1기, 2기 수강생 성과 카톡/수익 화면 갤러리 영역]</strong>
-              <span style="font-size: 13px; color: var(--text-muted); font-weight: normal;">"첫 글 올리고 3일 만에 예약 알림 떴어요!", "퇴근 후 30분 했는데 80만 원 들어왔습니다" 실시간 카톡 캡처</span>
+            <div style="margin-bottom: 24px;">
+              <h3 style="font-size: 19px; font-weight: 900; color: #0F172A; margin-bottom: 10px; line-height: 1.5;">
+                블로그 게시글 작성까지 프로그램이 해주면 게시 버튼 누르고 끝!
+              </h3>
+              <div class="photo-upload-slot" data-photo-slot="slot-how-3" data-slot-label="블로그 게시글 작성 및 게시 화면 사진 삽입하기"></div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); color: #FFFFFF; border-radius: 16px; padding: 24px; text-align: center;">
+              <h3 style="font-size: 21px; font-weight: 900; line-height: 1.5; margin: 0;">
+                내 글을 보고 누군가가 결제를 하면<br />
+                <span style="color: #FDE047;">바로 통장으로 꽂히는 수익금!</span>
+              </h3>
             </div>
           </section>
 
-          <!-- 6. 초보자 4대 고민 해결 (QA Format) -->
+          <!-- ================= // 반박&재반박 ================= -->
           <section class="content-box-card" id="section-qa">
-            <span class="section-pill-badge">Q&A</span>
-            <h2 class="section-heading-h2">시작 전 가장 많이 하시는 고민들, 솔직하게 답해드립니다.</h2>
-            <p class="section-desc-p">준최 2등급 블로그로 시작해 월 400을 만든 원리와 노하우입니다.</p>
-
             <div class="qa-clean-list">
               
-              <!-- QA 1 -->
               <div class="qa-clean-card">
                 <div class="qa-clean-q">
-                  <span class="qa-badge-red">✕ 질문</span>
-                  <span>여행을 자주 못 가서 글 쓸 소재가 없어요</span>
+                  <span>Q1.여행을 자주 안 가서 글 쓸 소재가 없어요</span>
                 </div>
                 <div class="qa-clean-a">
-                  <span class="qa-badge-green">✓ 해결</span>
                   <div>
-                    <strong>안 가본 곳도 완벽하게 쓰는 큐레이션 포맷이 있습니다</strong><br />
-                    수강생의 70%가 최근 여행 이력 없이 정보성 글로 수익 달성하고 있습니다.
+                    <strong>-> 여행에 관한 정보를 올리고 관련 여행 상품을 올리는 정보성 글이기 때문에 여행을 다녀오지 않아도 돼요. 전에 다녀왔던 여행도 OK!</strong>
                   </div>
                 </div>
               </div>
 
-              <!-- QA 2 -->
               <div class="qa-clean-card">
                 <div class="qa-clean-q">
-                  <span class="qa-badge-red">✕ 질문</span>
-                  <span>팔로워나 이웃이 없어서 안 될 것 같아요</span>
+                  <span>Q2. 사람들이 제 글을 보고 여행 상품을 구매할까요?</span>
                 </div>
                 <div class="qa-clean-a">
-                  <span class="qa-badge-green">✓ 해결</span>
                   <div>
-                    <strong>팔로워 수와 수익은 완전히 무관합니다</strong><br />
-                    인플루언서가 아니어도 검색창에 키워드를 치고 들어오는 구매자만 잡습니다.
+                    <strong>-> 꼭 내가 올린 여행상품이 아니어도 내 링크를 통해 00시간내 구매만 하면 수익으로 잡혀요</strong>
                   </div>
                 </div>
               </div>
 
-              <!-- QA 3 -->
               <div class="qa-clean-card">
                 <div class="qa-clean-q">
-                  <span class="qa-badge-red">✕ 질문</span>
-                  <span>내 블로그 지수가 너무 낮아서 노출이 안 돼요</span>
+                  <span>Q2. 블로그 지수가 낮아요. 노출이 될까요?</span>
                 </div>
                 <div class="qa-clean-a">
-                  <span class="qa-badge-green">✓ 해결</span>
                   <div>
-                    <strong>준최 2등급에서 시작한 전설의 공식입니다</strong><br />
-                    지수보다 글의 구조와 클릭 위치가 매출을 결정합니다.
+                    <strong>-> 저 모찌앤잡도 준최2등급에서 시작했어요. 나락찍고 시작한 전설의 공식입니다.</strong>
                   </div>
                 </div>
               </div>
 
-              <!-- QA 4 -->
               <div class="qa-clean-card">
                 <div class="qa-clean-q">
-                  <span class="qa-badge-red">✕ 질문</span>
-                  <span>회사와 육아 때문에 하루 1시간도 내기 힘들어요</span>
+                  <span>Q3. 팔로워나 이웃이 없는데 그것도 상관 없나요?</span>
                 </div>
                 <div class="qa-clean-a">
-                  <span class="qa-badge-green">✓ 해결</span>
                   <div>
-                    <strong>하루 15분~30분이면 충분히 운영 가능합니다</strong><br />
-                    자체 개발 AI 프로그램으로 키워드 선정부터 탈고까지 15분 컷으로 완성합니다.
+                    <strong>-> 여행블로그는 타 카테고리에 비해 팔로워 수익이나 조회수의 영향을 크게 받지 않아 상관없어요</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="qa-clean-card">
+                <div class="qa-clean-q">
+                  <span>Q4. 회사와 육아때문에 하루 1시간도 겨우 낼 수 있어요</span>
+                </div>
+                <div class="qa-clean-a">
+                  <div>
+                    <strong>-> 지금까지 뭐 보셨나요! 제가 만든 자체 AI프로그램으로 30분이면 가능해요. 프로그램은 평생 제공!</strong>
                   </div>
                 </div>
               </div>
@@ -1658,58 +2290,46 @@
             </div>
           </section>
 
-          <!-- 7. 자주 묻는 질문 (FAQ Accordion) -->
-          <section class="content-box-card" id="section-faq">
-            <span class="section-pill-badge">FAQ</span>
-            <h2 class="section-heading-h2">자주 묻는 질문</h2>
-            <p class="section-desc-p">수강 전 궁금하신 점을 모아두었습니다.</p>
+          <!-- ================= // 수강생 성과 ================= -->
+          <section class="content-box-card" id="section-proof">
+            <h2 class="section-heading-h2" style="margin-bottom: 16px;">수강생 실제 성과후기 공개!</h2>
 
-            <div class="curriculum-accordion-list">
-              <div class="curriculum-chapter">
-                <div class="curriculum-chapter-header" onclick="toggleChapter(this)">
-                  <div class="chapter-title-text">
-                    <span class="chapter-tag" style="background: #E0F2FE;">Q1</span>
-                    <span>직장·육아로 하루 1시간밖에 없는데 정말 가능한가요?</span>
-                  </div>
-                  <span>▼</span>
-                </div>
-                <div class="curriculum-chapter-body">
-                  <p style="font-size: 14px; color: var(--text-sub); line-height: 1.6;">
-                    네, 100% 가능합니다! 현재 인기 있는 여행 키워드 찾기부터 게시글 작성, 가독성 포맷팅까지 모찌앤잡 전용 AI 자동화 도구로 세팅되어 있습니다. 퇴근 후 하루 15분~30분만 투자하셔도 완벽하게 고퀄리티 포스팅을 마칠 수 있습니다.
-                  </p>
-                </div>
+            <!-- 사진 슬롯 5개 하나씩 세로 배치 (수강생 성과후기) -->
+            <div class="photo-upload-slot" data-photo-slot="slot-review-1" data-slot-label="수강생 성과후기 사진 ① 삽입하기"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-review-2" data-slot-label="수강생 성과후기 사진 ② 삽입하기"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-review-3" data-slot-label="수강생 성과후기 사진 ③ 삽입하기"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-review-4" data-slot-label="수강생 성과후기 사진 ④ 삽입하기"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-review-5" data-slot-label="수강생 성과후기 사진 ⑤ 삽입하기"></div>
+          </section>
+
+          <!-- ================= // 마지막 cta & //버튼 (깜빡거리는 효과) ================= -->
+          <section class="final-cta-card" id="section-final-cta">
+            <h2 style="font-size: 23px; font-weight: 900; line-height: 1.45; margin-bottom: 12px; color: #FFFFFF;">
+              망설이는 지금 이 순간에, 누군가는 방구석에서 '두 번째 월급'을 벌고 있어요!
+            </h2>
+            <p style="font-size: 17px; font-weight: 700; color: #CBD5E1; margin-bottom: 0;">
+              더 이상 남들의 수익 인증 글 보며 부러워만 하지마세요
+            </p>
+
+            <div class="final-benefit-summary-box">
+              <div style="font-size: 18px; font-weight: 900; color: #FDE047; margin-bottom: 14px;">
+                [이 페이지 한정] 놓치면 후회할 미친 혜택 총정리!
               </div>
-
-              <div class="curriculum-chapter">
-                <div class="curriculum-chapter-header" onclick="toggleChapter(this)">
-                  <div class="chapter-title-text">
-                    <span class="chapter-tag" style="background: #E0F2FE;">Q2</span>
-                    <span>AI 프로그램은 수강 후 평생 무료로 쓸 수 있나요?</span>
-                  </div>
-                  <span>▼</span>
-                </div>
-                <div class="curriculum-chapter-body">
-                  <p style="font-size: 14px; color: var(--text-sub); line-height: 1.6;">
-                    네! 이번 슈퍼얼리버드 수강생분들에게는 모찌앤잡이 직접 개발한 여행 블로그 특화 AI 자동화 도구와 프롬프트 세트를 평생 무제한 사용하실 수 있는 권한을 제공합니다. 추가 월 구독료나 숨겨진 비용은 일절 없습니다.
-                  </p>
-                </div>
-              </div>
-
-              <div class="curriculum-chapter">
-                <div class="curriculum-chapter-header" onclick="toggleChapter(this)">
-                  <div class="chapter-title-text">
-                    <span class="chapter-tag" style="background: #E0F2FE;">Q3</span>
-                    <span>수강료 무이자 할부는 최대 몇 개월까지 지원되나요?</span>
-                  </div>
-                  <span>▼</span>
-                </div>
-                <div class="curriculum-chapter-body">
-                  <p style="font-size: 14px; color: var(--text-sub); line-height: 1.6;">
-                    국내 주요 카드사(현대, 삼성, 국민, 신한 등) 최대 12개월 무이자 할부를 지원합니다. 12개월 할부 이용 시 월 49,166원 수준의 부담 없는 커피 한두 잔 가격으로 평생 수익 파이프라인을 구축하실 수 있습니다.
-                  </p>
-                </div>
+              <div style="display: flex; flex-direction: column; gap: 10px; font-size: 15.5px; font-weight: 800; color: #F8FAFC;">
+                <div>혜택 1. [독점] 모찌앤잡 자체 개발 'AI 자동화 프로그램 3종' 무료</div>
+                <div>혜택 2. 평생 소장! 여행 블로그 수익화 바이블 (전자책 201P)</div>
+                <div>혜택 3. 여행 블로그 수익화 VOD 12강 무제한 제공</div>
               </div>
             </div>
+
+            <p style="font-size: 18px; font-weight: 900; color: #38BDF8; margin-bottom: 24px;">
+              내일부터 당장 통장에 돈이 꽂히는 마법, 지금 바로 시작하세요!
+            </p>
+
+            <!-- //버튼 (깜빡거리는 효과) -->
+            <button type="button" class="blinking-final-cta-btn" onclick="openCheckoutModal()">
+              [슈퍼얼리버드 곧 마감!] 여행 블로그 수익화 풀패키지 지금 혜택받고 시작하기
+            </button>
           </section>
 
         </div>
@@ -1740,9 +2360,12 @@
 
             <!-- Included Perks (목차보기 삭제 및 순서 조정) -->
             <div class="sidebar-perks-box">
+              <div style="font-size: 13.5px; font-weight: 900; color: var(--text-main); margin-bottom: 10px;">
+                여행 블로그 수익화 풀패키지
+              </div>
               <div class="sidebar-perk-item">
                 <span class="sidebar-check-icon">✓</span>
-                <span><strong>모찌앤잡 여행 특화 AI 3종 프로그램 영구 소장</strong></span>
+                <span><strong>모찌앤잡 여행 특화 AI 3종 프로그램 제공</strong></span>
               </div>
               <div class="sidebar-perk-item">
                 <span class="sidebar-check-icon">✓</span>
@@ -1751,10 +2374,6 @@
               <div class="sidebar-perk-item">
                 <span class="sidebar-check-icon">✓</span>
                 <span><strong>여행 블로그 수익화 VOD 12강 (평생 무제한)</strong></span>
-              </div>
-              <div class="sidebar-perk-item">
-                <span class="sidebar-check-icon">✓</span>
-                <span><strong>여행 블로그 수익화 풀패키지</strong></span>
               </div>
             </div>
 
@@ -1840,7 +2459,7 @@
           💳 12개월 무이자 시
         </div>
         <div style="font-size: 12px; color: var(--text-sub); margin-top: 10px; border-top: 1px dashed var(--border-sky); padding-top: 8px; line-height: 1.5;">
-          ✓ VOD 12강 + AI 3종 프로그램 영구 소장 + 전자책 201p + 고수익 키워드 DB
+          모찌앤잡 여행 특화 AI 3종 프로그램 제공 + 여행 블로그 수익화 전자책 201p + 여행 블로그 수익화 VOD 12강
         </div>
       </div>
 
@@ -2164,31 +2783,166 @@
       }
     }
 
-    // 8. Tab Navigation ScrollSpy
-    function initTabScrollSpy() {
-      const tabs = document.querySelectorAll('.nav-tab-link');
-      const sections = [];
-      tabs.forEach(tab => {
-        const href = tab.getAttribute('href');
-        if (href && href.startsWith('#')) {
-          const sec = document.getElementById(href.substring(1));
-          if (sec) sections.push({ tab, sec });
-        }
+    // 8. Interactive Photo Upload Slots (IndexedDB persistence)
+    const PHOTO_DB_NAME = 'MozziLandingPhotoDB';
+    const PHOTO_STORE_NAME = 'photoSlots';
+
+    function openPhotoDB() {
+      return new Promise((resolve, reject) => {
+        const req = indexedDB.open(PHOTO_DB_NAME, 1);
+        req.onupgradeneeded = (e) => {
+          const db = e.target.result;
+          if (!db.objectStoreNames.contains(PHOTO_STORE_NAME)) {
+            db.createObjectStore(PHOTO_STORE_NAME);
+          }
+        };
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject(req.error);
+      });
+    }
+
+    async function saveSlotImage(slotKey, dataUrl) {
+      try {
+        const db = await openPhotoDB();
+        return new Promise((resolve, reject) => {
+          const tx = db.transaction(PHOTO_STORE_NAME, 'readwrite');
+          tx.objectStore(PHOTO_STORE_NAME).put(dataUrl, slotKey);
+          tx.oncomplete = () => resolve();
+          tx.onerror = () => reject(tx.error);
+        });
+      } catch (err) {
+        try { localStorage.setItem('photo_' + slotKey, dataUrl); } catch (_) {}
+      }
+    }
+
+    async function loadSlotImage(slotKey) {
+      try {
+        const db = await openPhotoDB();
+        return new Promise((resolve) => {
+          const tx = db.transaction(PHOTO_STORE_NAME, 'readonly');
+          const req = tx.objectStore(PHOTO_STORE_NAME).get(slotKey);
+          req.onsuccess = () => resolve(req.result || localStorage.getItem('photo_' + slotKey) || null);
+          req.onerror = () => resolve(localStorage.getItem('photo_' + slotKey) || null);
+        });
+      } catch (err) {
+        return localStorage.getItem('photo_' + slotKey) || null;
+      }
+    }
+
+    async function deleteSlotImage(slotKey) {
+      try {
+        const db = await openPhotoDB();
+        return new Promise((resolve) => {
+          const tx = db.transaction(PHOTO_STORE_NAME, 'readwrite');
+          tx.objectStore(PHOTO_STORE_NAME).delete(slotKey);
+          tx.oncomplete = () => resolve();
+          tx.onerror = () => resolve();
+        });
+      } catch (err) {}
+      try { localStorage.removeItem('photo_' + slotKey); } catch (_) {}
+    }
+
+    function renderPhotoSlot(slotEl, dataUrl) {
+      const slotKey = slotEl.getAttribute('data-photo-slot');
+      const label = slotEl.getAttribute('data-slot-label') || '사진 삽입하기';
+      slotEl.innerHTML = '';
+
+      const fileInput = document.createElement('input');
+      fileInput.type = 'file';
+      fileInput.accept = 'image/*';
+      fileInput.style.display = 'none';
+
+      fileInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = async (ev) => {
+          const resultUrl = ev.target.result;
+          await saveSlotImage(slotKey, resultUrl);
+          renderPhotoSlot(slotEl, resultUrl);
+        };
+        reader.readAsDataURL(file);
       });
 
-      window.addEventListener('scroll', () => {
-        const scrollPos = window.scrollY + 160;
-        let activeTab = null;
-        for (let i = 0; i < sections.length; i++) {
-          if (scrollPos >= sections[i].sec.offsetTop) {
-            activeTab = sections[i].tab;
+      slotEl.appendChild(fileInput);
+
+      if (dataUrl) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'photo-uploaded-wrapper';
+
+        const img = document.createElement('img');
+        img.src = dataUrl;
+        img.alt = label;
+
+        const actions = document.createElement('div');
+        actions.className = 'photo-slot-actions';
+
+        const changeBtn = document.createElement('button');
+        changeBtn.type = 'button';
+        changeBtn.className = 'photo-action-btn';
+        changeBtn.textContent = '📷 사진 변경';
+        changeBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          fileInput.click();
+        });
+
+        const delBtn = document.createElement('button');
+        delBtn.type = 'button';
+        delBtn.className = 'photo-action-btn delete';
+        delBtn.textContent = '🗑️ 삭제';
+        delBtn.addEventListener('click', async (e) => {
+          e.stopPropagation();
+          await deleteSlotImage(slotKey);
+          renderPhotoSlot(slotEl, null);
+        });
+
+        actions.appendChild(changeBtn);
+        actions.appendChild(delBtn);
+        wrapper.appendChild(img);
+        wrapper.appendChild(actions);
+        slotEl.appendChild(wrapper);
+      } else {
+        const placeholder = document.createElement('div');
+        placeholder.className = 'photo-upload-placeholder';
+        placeholder.innerHTML = `
+          <div class="photo-upload-icon">🖼️</div>
+          <div class="photo-upload-title">+ ${label}</div>
+          <div class="photo-upload-sub">클릭하여 이미지 파일 선택 또는 여기에 사진을 드래그하세요 (자동 저장)</div>
+        `;
+        placeholder.addEventListener('click', () => fileInput.click());
+        slotEl.appendChild(placeholder);
+      }
+    }
+
+    async function initPhotoUploadSlots() {
+      const slots = document.querySelectorAll('.photo-upload-slot');
+      for (const slotEl of slots) {
+        const slotKey = slotEl.getAttribute('data-photo-slot');
+        const savedDataUrl = await loadSlotImage(slotKey);
+        renderPhotoSlot(slotEl, savedDataUrl);
+
+        slotEl.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          slotEl.classList.add('dragover');
+        });
+        slotEl.addEventListener('dragleave', () => {
+          slotEl.classList.remove('dragover');
+        });
+        slotEl.addEventListener('drop', (e) => {
+          e.preventDefault();
+          slotEl.classList.remove('dragover');
+          const file = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+          if (file && file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = async (ev) => {
+              const resultUrl = ev.target.result;
+              await saveSlotImage(slotKey, resultUrl);
+              renderPhotoSlot(slotEl, resultUrl);
+            };
+            reader.readAsDataURL(file);
           }
-        }
-        if (activeTab) {
-          tabs.forEach(t => t.classList.remove('active'));
-          activeTab.classList.add('active');
-        }
-      }, { passive: true });
+        });
+      }
     }
 
     // Keyboard ESC listener
@@ -2202,7 +2956,7 @@
 
     document.addEventListener('DOMContentLoaded', () => {
       startCountdown();
-      initTabScrollSpy();
+      initPhotoUploadSlots();
     });
   </script>
 </body>
