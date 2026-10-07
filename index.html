@@ -1867,7 +1867,8 @@
     <aside class="top-sky-alert-bar" aria-label="슈퍼얼리버드 특가 마감 안내">
       <div class="top-sky-alert-inner">
         <span class="top-alert-pill">25% 할인!</span>
-        <span>수강료가 곧 인상돼요! (슈퍼얼리버드 마감 직전)</span>
+        <span>슈퍼얼리버드 곧 마감! 수강료 인상까지</span>
+        <span class="top-alert-timer" id="topCountdownTimer">14일 00:00:00 남음</span>
       </div>
     </aside>
 
@@ -1909,10 +1910,9 @@
 
             <div class="lecture-key-strip">
               <div class="key-strip-item">⭐ <strong>평점 4.9</strong> (수강생 검증 완료)</div>
-              <div class="key-strip-item">🎬 <strong>총 12강 VOD</strong> (평생 무제한 수강)</div>
-              <div class="key-strip-item">🤖 <strong>AI 3종 프로그램</strong> (영구 소장)</div>
+              <div class="key-strip-item">🎬 <strong>총 12강 VOD</strong> (무제한 수강)</div>
+              <div class="key-strip-item">🤖 <strong>AI 3종 프로그램</strong></div>
               <div class="key-strip-item">📘 <strong>전자책 201p</strong> (실전 바이블)</div>
-              <div class="key-strip-item">📱 <strong>PC & 모바일</strong> 무제한 수강</div>
             </div>
           </div>
 
@@ -1943,10 +1943,10 @@
             </div>
 
             <!-- 사진 슬롯 2개 가로 나란히 (도입1) -->
-  <div class="photo-pair-grid">
-    <img src="N년전 여행사진1.PNG" style="width: 100%; height: auto; border-radius: 8px;">
-    <img src="N년전 여행사진2.PNG" style="width: 100%; height: auto; border-radius: 8px;">
-</div>
+            <div class="photo-pair-grid">
+              <div class="photo-upload-slot" data-photo-slot="slot-intro1-1" data-default-src="N년전 여행사진1.PNG" data-slot-label="도입1 사진 ① 삽입하기"></div>
+              <div class="photo-upload-slot" data-photo-slot="slot-intro1-2" data-slot-label="도입1 사진 ② 삽입하기"></div>
+            </div>
           </section>
 
           <!-- ================= // 도입-세부설명 ================= -->
@@ -1969,8 +1969,8 @@
 
             <!-- 사진 슬롯 2개 가로 나란히 (도입-세부설명) -->
             <div class="photo-pair-grid">
-              <div class="photo-upload-slot" data-photo-slot="slot-intro2-1" data-slot-label="도입-세부설명 사진 ① 삽입하기"></div>
-              <div class="photo-upload-slot" data-photo-slot="slot-intro2-2" data-slot-label="도입-세부설명 사진 ② 삽입하기"></div>
+              <div class="photo-upload-slot" data-photo-slot="slot-intro2-1" data-slot-label="실제 블로그 글1.PNG"></div>
+              <div class="photo-upload-slot" data-photo-slot="slot-intro2-2" data-slot-label="실제 블로그 글2.PNG"></div>
             </div>
 
             <div style="text-align: center; background: #FFFFFF; border: 2px solid #0284C7; border-radius: 16px; padding: 22px; margin-top: 18px;">
@@ -1993,14 +1993,21 @@
             </div>
 
             <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
-              <div style="background: #FFFFFF; border: 1.5px solid #BAE6FD; border-radius: 12px; padding: 16px 20px; font-size: 16px; font-weight: 800; color: #0F172A;">
-                <span style="color: #0284C7; font-weight: 900; margin-right: 6px;">[1]</span> 전자책 201p - 여행 블로그 수익화 실전 노하우 전자책
+              <div style="background: #FFFFFF; border: 1.5px solid #BAE6FD; border-radius: 12px; padding: 16px 20px; font-size: 16px; font-weight: 800; color: #0F172A; line-height: 1.6;">
+                <span style="color: #0284C7; font-weight: 900; margin-right: 4px;">혜택 1.</span> [독점] 모찌앤잡 자체 개발 'AI 자동화 프로그램 3종' 무료 제공<br />
+                <span style="color: #0284C7; font-weight: 800;">+ 타이핑 프로그램 최초 50개글 작성권 제공!</span>
               </div>
               <div style="background: #FFFFFF; border: 1.5px solid #BAE6FD; border-radius: 12px; padding: 16px 20px; font-size: 16px; font-weight: 800; color: #0F172A;">
-                <span style="color: #0284C7; font-weight: 900; margin-right: 6px;">[2]</span> VOD 12강 - 평생 무제한 수강 가능
+                <span style="color: #0284C7; font-weight: 900; margin-right: 4px;">혜택 2.</span> [평생 소장] 여행 블로그 수익화 바이블 (전자책 201P)
               </div>
               <div style="background: #FFFFFF; border: 1.5px solid #BAE6FD; border-radius: 12px; padding: 16px 20px; font-size: 16px; font-weight: 800; color: #0F172A;">
-                <span style="color: #0284C7; font-weight: 900; margin-right: 6px;">[3]</span> 모찌앤잡 AI프로그램 3종 풀세트
+                <span style="color: #0284C7; font-weight: 900; margin-right: 4px;">혜택 3.</span> [무제한] 여행 블로그 수익화 VOD 12강 무제한 제공
+              </div>
+              <div style="background: #FFFFFF; border: 1.5px solid #BAE6FD; border-radius: 12px; padding: 16px 20px; font-size: 16px; font-weight: 800; color: #0F172A;">
+                <span style="color: #0284C7; font-weight: 900; margin-right: 4px;">혜택 4.</span> [디럭스 수강생 전용] 수강생 카톡방 초대
+              </div>
+              <div style="background: #FFFFFF; border: 1.5px solid #BAE6FD; border-radius: 12px; padding: 16px 20px; font-size: 16px; font-weight: 800; color: #0F172A;">
+                <span style="color: #0284C7; font-weight: 900; margin-right: 4px;">혜택 5.</span> 크몽 수강생 전용 마이리얼 트립 할인코드 제공
               </div>
             </div>
 
@@ -2032,7 +2039,7 @@
                 <p class="ai-feature-desc">
                   클릭부터 실제 구매까지 잘 나오는 돈 되는 여행 글감을 알아서 추천해줘요
                 </p>
-                <div class="photo-upload-slot" data-photo-slot="slot-ai-1" data-slot-label="[1] 여행 키워드 추천 프로그램 사진 삽입하기"></div>
+                <div class="photo-upload-slot" data-photo-slot="slot-ai-1" data-slot-label="프로그램 1단계.gif"></div>
               </div>
 
               <!-- [2] 15분만에 완성되는 여행 특화 글쓰기 AI -->
@@ -2042,7 +2049,7 @@
                   여행 상품 내용 복사해서 붙여넣으면 끝!<br />
                   오사카 맛집, 방콕 투어, 제주 숙소 등 어떤 주제든 내가 원하는 문체로 글을 써줘요
                 </p>
-                <div class="photo-upload-slot" data-photo-slot="slot-ai-2" data-slot-label="[2] 여행 특화 글쓰기 AI 사진 삽입하기"></div>
+                <div class="photo-upload-slot" data-photo-slot="slot-ai-2" data-slot-label="프로그램 2단계.gif"></div>
               </div>
 
               <!-- [3] 블로그 게시글까지 프로그램이 자동으로 작성! -->
@@ -2051,7 +2058,7 @@
                 <p class="ai-feature-desc">
                   AI가 모바일 화면에 최적화된 블로그 가독성 포맷으로 네이버 게시글까지 직접 작성해요
                 </p>
-                <div class="photo-upload-slot" data-photo-slot="slot-ai-3" data-slot-label="[3] 블로그 게시글 자동 작성 프로그램 사진 삽입하기"></div>
+                <div class="photo-upload-slot" data-photo-slot="slot-ai-3" data-slot-label="프로그램 3단계.gif"></div>
               </div>
 
             </div>
@@ -2102,7 +2109,7 @@
             </h2>
 
             <!-- 강사 프로필 사진 슬롯 -->
-            <div class="photo-upload-slot" data-photo-slot="slot-profile-1" data-slot-label="강사 프로필 사진 삽입하기"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-profile-1" data-slot-label="모찌앤잡_프로필.png"></div>
 
             <div class="timeline-story-list" style="margin-top: 20px; margin-bottom: 28px;">
               <div class="timeline-item">
@@ -2144,7 +2151,7 @@
                 <h3 style="font-size: 18px; font-weight: 900; color: #0F172A; margin-bottom: 8px;">
                   마이리얼트립 최근 실제 수익 내역
                 </h3>
-                <div class="photo-upload-slot" data-photo-slot="slot-story-mrt" data-slot-label="마이리얼트립 최근 실제 수익 내역 사진 삽입하기"></div>
+                <div class="photo-upload-slot" data-photo-slot="slot-story-mrt" data-slot-label="강사수익1(마리트)"></div>
               </div>
 
               <!-- 여기어때 최근 실제 수익 내역 -->
@@ -2152,7 +2159,7 @@
                 <h3 style="font-size: 18px; font-weight: 900; color: #0F172A; margin-bottom: 8px;">
                   여기어때 최근 실제 수익 내역
                 </h3>
-                <div class="photo-upload-slot" data-photo-slot="slot-story-yeogi" data-slot-label="여기어때 최근 실제 수익 내역 사진 삽입하기"></div>
+                <div class="photo-upload-slot" data-photo-slot="slot-story-yeogi" data-slot-label="강사수익2(여기어때)"></div>
               </div>
 
               <!-- 매일 끊임없이 들어오는 수익! -->
@@ -2160,7 +2167,7 @@
                 <h3 style="font-size: 18px; font-weight: 900; color: #0F172A; margin-bottom: 8px;">
                   매일 끊임없이 들어오는 수익!
                 </h3>
-                <div class="photo-upload-slot" data-photo-slot="slot-story-daily" data-slot-label="매일 끊임없이 들어오는 수익 사진 삽입하기"></div>
+                <div class="photo-upload-slot" data-photo-slot="slot-story-daily" data-slot-label="강사수익3"></div>
               </div>
 
               <!-- 공무원 면직 -> 마이리얼트립 이직 후 여행블로그로 월급뛰어넘고 퇴사 -->
@@ -2169,8 +2176,8 @@
                   공무원 면직 ->  마이리얼트립 이직 후 여행블로그로 월급뛰어넘고 퇴사
                 </h3>
                 <div class="photo-pair-grid">
-                  <div class="photo-upload-slot" data-photo-slot="slot-story-resign-1" data-slot-label="공무원 면직 / 마이리얼트립 이직 사진 ① 삽입하기"></div>
-                  <div class="photo-upload-slot" data-photo-slot="slot-story-resign-2" data-slot-label="공무원 면직 / 마이리얼트립 이직 사진 ② 삽입하기"></div>
+                  <div class="photo-upload-slot" data-photo-slot="slot-story-resign-1" data-slot-label="퇴사사진1.png"></div>
+                  <div class="photo-upload-slot" data-photo-slot="slot-story-resign-2" data-slot-label="퇴사사진2.png"></div>
                 </div>
               </div>
 
@@ -2180,8 +2187,8 @@
                   이제는 협찬받아 공짜 해외여행, 공짜 숙소까지!
                 </h3>
                 <div class="photo-pair-grid">
-                  <div class="photo-upload-slot" data-photo-slot="slot-story-sponsor-1" data-slot-label="협찬 해외여행 / 숙소 사진 ① 삽입하기"></div>
-                  <div class="photo-upload-slot" data-photo-slot="slot-story-sponsor-2" data-slot-label="협찬 해외여행 / 숙소 사진 ② 삽입하기"></div>
+                  <div class="photo-upload-slot" data-photo-slot="slot-story-sponsor-1" data-slot-label="여행사진1.png"></div>
+                  <div class="photo-upload-slot" data-photo-slot="slot-story-sponsor-2" data-slot-label="여행사진2.png"></div>
                 </div>
               </div>
 
@@ -2203,21 +2210,21 @@
               <h3 style="font-size: 19px; font-weight: 900; color: #0F172A; margin-bottom: 10px;">
                 지금 인기 있는 여행 키워드 프로그램으로 찾고
               </h3>
-              <div class="photo-upload-slot" data-photo-slot="slot-how-1" data-slot-label="키워드 프로그램 화면 사진 삽입하기"></div>
+              <div class="photo-upload-slot" data-photo-slot="slot-how-1" data-slot-label="프로그램 1단계.gif"></div>
             </div>
 
             <div style="margin-bottom: 24px;">
               <h3 style="font-size: 19px; font-weight: 900; color: #0F172A; margin-bottom: 10px; line-height: 1.5;">
                 여행사 홈페이지에 나와있는 여행상품 내용 복사해서 프로그램에 붙여넣은 후 글 자동생성 버튼 클릭
               </h3>
-              <div class="photo-upload-slot" data-photo-slot="slot-how-2" data-slot-label="글 자동생성 화면 사진 삽입하기"></div>
+              <div class="photo-upload-slot" data-photo-slot="slot-how-2" data-slot-label="프로그램 2단계.gif"></div>
             </div>
 
             <div style="margin-bottom: 24px;">
               <h3 style="font-size: 19px; font-weight: 900; color: #0F172A; margin-bottom: 10px; line-height: 1.5;">
                 블로그 게시글 작성까지 프로그램이 해주면 게시 버튼 누르고 끝!
               </h3>
-              <div class="photo-upload-slot" data-photo-slot="slot-how-3" data-slot-label="블로그 게시글 작성 및 게시 화면 사진 삽입하기"></div>
+              <div class="photo-upload-slot" data-photo-slot="slot-how-3" data-slot-label="프로그램 3단계.gif"></div>
             </div>
 
             <div style="background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); color: #FFFFFF; border-radius: 16px; padding: 24px; text-align: center;">
@@ -2225,6 +2232,21 @@
                 내 글을 보고 누군가가 결제를 하면<br />
                 <span style="color: #FDE047;">바로 통장으로 꽂히는 수익금!</span>
               </h3>
+            </div>
+
+            <div style="margin-top: 28px;">
+              <h3 style="font-size: 20px; font-weight: 900; color: #0F172A; margin-bottom: 12px; text-align: center;">
+                모찌앤잡 프로그램 실제 시연 공개!
+              </h3>
+              <div class="video-aspect-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/YewBptZ8-hY?si=lDPk4ePGq1Yd5erU"
+                  title="모찌앤잡 프로그램 실제 시연 공개!"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
             </div>
           </section>
 
@@ -2249,7 +2271,7 @@
                 </div>
                 <div class="qa-clean-a">
                   <div>
-                    <strong>-> 꼭 내가 올린 여행상품이 아니어도 내 링크를 통해 00시간내 구매만 하면 수익으로 잡혀요</strong>
+                    <strong>-> 꼭 내가 올린 여행상품이 아니어도 내 링크를 통해 일정시간 내 구매만 하면 수익으로 잡혀요</strong>
                   </div>
                 </div>
               </div>
@@ -2295,11 +2317,106 @@
             <h2 class="section-heading-h2" style="margin-bottom: 16px;">수강생 실제 성과후기 공개!</h2>
 
             <!-- 사진 슬롯 5개 하나씩 세로 배치 (수강생 성과후기) -->
-            <div class="photo-upload-slot" data-photo-slot="slot-review-1" data-slot-label="수강생 성과후기 사진 ① 삽입하기"></div>
-            <div class="photo-upload-slot" data-photo-slot="slot-review-2" data-slot-label="수강생 성과후기 사진 ② 삽입하기"></div>
-            <div class="photo-upload-slot" data-photo-slot="slot-review-3" data-slot-label="수강생 성과후기 사진 ③ 삽입하기"></div>
-            <div class="photo-upload-slot" data-photo-slot="slot-review-4" data-slot-label="수강생 성과후기 사진 ④ 삽입하기"></div>
-            <div class="photo-upload-slot" data-photo-slot="slot-review-5" data-slot-label="수강생 성과후기 사진 ⑤ 삽입하기"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-review-1" data-slot-label="수강생후기1.JPG"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-review-2" data-slot-label="수강생후기2.JPG"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-review-3" data-slot-label="수강생후기3.JPG"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-review-4" data-slot-label="수강생후기4.jpg"></div>
+            <div class="photo-upload-slot" data-photo-slot="slot-review-5" data-slot-label="수강생후기5.jpg"></div>
+          </section>
+
+          <!-- ================= // 커리큘럼 (VOD 커리큘럼 & 전자책 목차) ================= -->
+          <section class="content-box-card" id="section-curriculum">
+            <!-- [VOD 커리큘럼] -->
+            <div style="margin-bottom: 36px;">
+              <h2 class="section-heading-h2" style="margin-bottom: 18px;">[VOD 커리큘럼]</h2>
+
+              <div class="curriculum-accordion-list">
+                <!-- [기초] -->
+                <div class="curriculum-chapter">
+                  <button type="button" class="curriculum-chapter-header" onclick="toggleChapter(this)">
+                    <span class="chapter-title-text">
+                      <span class="chapter-tag">[기초]</span>
+                      <span>여행 CPA 기본 이해하기</span>
+                    </span>
+                  </button>
+                  <div class="curriculum-chapter-body">
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>오리엔테이션 · 용어 미리보기</span></div>
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>여행 CPA란? 기초 개념 정리</span></div>
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>네이버 블로그 기초 &amp; 2026 검색 변화</span></div>
+                  </div>
+                </div>
+
+                <!-- [실전] -->
+                <div class="curriculum-chapter">
+                  <button type="button" class="curriculum-chapter-header" onclick="toggleChapter(this)">
+                    <span class="chapter-title-text">
+                      <span class="chapter-tag">[실전]</span>
+                      <span>첫 글 쓰고 발행하기</span>
+                    </span>
+                  </button>
+                  <div class="curriculum-chapter-body">
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>시작 전 세팅하기 (여행플랫폼)</span></div>
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>한 편의 글이 매출이 되는 5단계</span></div>
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>제목과 키워드</span></div>
+                  </div>
+                </div>
+
+                <!-- [확장] -->
+                <div class="curriculum-chapter">
+                  <button type="button" class="curriculum-chapter-header" onclick="toggleChapter(this)">
+                    <span class="chapter-title-text">
+                      <span class="chapter-tag">[확장]</span>
+                      <span>여러 카테고리로 늘리기</span>
+                    </span>
+                  </button>
+                  <div class="curriculum-chapter-body">
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>AI를 제대로 쓰는 법</span></div>
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>카테고리별 실전</span></div>
+                  </div>
+                </div>
+
+                <!-- [운영] -->
+                <div class="curriculum-chapter">
+                  <button type="button" class="curriculum-chapter-header" onclick="toggleChapter(this)">
+                    <span class="chapter-title-text">
+                      <span class="chapter-tag">[운영]</span>
+                      <span>꾸준히 운영하고 관리하기</span>
+                    </span>
+                  </button>
+                  <div class="curriculum-chapter-body">
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>더 많이 파는 시즌과 타이밍</span></div>
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>저품질 오해와 관리</span></div>
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>50만 원, 그리고 협찬의 세계</span></div>
+                    <div class="lesson-item"><span class="lesson-icon">▶</span><span>30일 액션플랜 &amp; 1년 로드맵</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- [전자책 목차] -->
+            <div style="border-top: 2px dashed #E2E8F0; padding-top: 32px;">
+              <h2 class="section-heading-h2" style="margin-bottom: 18px;">[전자책 목차]</h2>
+
+              <div style="background: #F8FAFC; border: 1.5px solid #BAE6FD; border-radius: 16px; padding: 24px 22px; display: flex; flex-direction: column; gap: 10px;">
+                <div style="font-size: 14.5px; font-weight: 800; color: #0284C7;">INTRO 공무원에서 풀타임 블로거까지</div>
+                <div style="font-size: 14.5px; font-weight: 700; color: #1E293B;">01 여행 CPA의 작동 방식 - 누가 누구에게 돈을 내는가</div>
+                <div style="font-size: 14.5px; font-weight: 700; color: #1E293B;">02 어떤 여행 CPA 플랫폼을 쓸까 - 여행 CPA 플랫폼, 어디부터 시작할 것인가</div>
+                <div style="font-size: 14.5px; font-weight: 700; color: #1E293B;">03 네 가지 카테고리 - 투어·숙소·항공·티켓, 안 가본 곳까지 쓰는 법</div>
+                <div style="font-size: 14.5px; font-weight: 700; color: #1E293B;">04 글이 매출이 되기까지 - 제목·모바일·롱테일·다링크</div>
+                <div style="font-size: 14.5px; font-weight: 700; color: #1E293B;">05 AI를 쓰는 법 - 글 프롬프트 + 사진 도구, 속도와 질의 균형</div>
+                <div style="font-size: 14.5px; font-weight: 700; color: #1E293B;">06 성수기 한 달 전 - 카테고리 × 시즌의 문법</div>
+                <div style="font-size: 14.5px; font-weight: 700; color: #1E293B;">07 지수가 떨어지는 이유 - 5대 실수와 회복 루틴</div>
+                <div style="font-size: 14.5px; font-weight: 700; color: #1E293B;">08 매출 50만원, 그리고 다음 단계 - 호텔이 먼저 부르는 협찬의 세계</div>
+
+                <div style="border-top: 1px dashed #CBD5E1; margin: 8px 0;"></div>
+
+                <div style="font-size: 14.5px; font-weight: 800; color: #0284C7;">EPI 첫 30일, 그리고 1년의 곡선</div>
+                <div style="font-size: 14px; font-weight: 700; color: #334155;">부록 A 챌린지 참여자 전용 도구</div>
+                <div style="font-size: 14px; font-weight: 700; color: #334155;">부록 B 숙소 역제안 메일 가이드</div>
+                <div style="font-size: 14px; font-weight: 700; color: #334155;">부록 C실전 체크리스트 모음</div>
+                <div style="font-size: 14px; font-weight: 700; color: #334155;">부록 D 플랫폼별 파트너스 가입 가이드</div>
+              </div>
+            </div>
           </section>
 
           <!-- ================= // 마지막 cta & //버튼 (깜빡거리는 효과) ================= -->
@@ -2316,18 +2433,23 @@
                 [이 페이지 한정] 놓치면 후회할 미친 혜택 총정리!
               </div>
               <div style="display: flex; flex-direction: column; gap: 10px; font-size: 15.5px; font-weight: 800; color: #F8FAFC;">
-                <div>혜택 1. [독점] 모찌앤잡 자체 개발 'AI 자동화 프로그램 3종' 무료</div>
-                <div>혜택 2. 평생 소장! 여행 블로그 수익화 바이블 (전자책 201P)</div>
-                <div>혜택 3. 여행 블로그 수익화 VOD 12강 무제한 제공</div>
+                <div style="line-height: 1.55;">
+                  혜택 1. [독점] 모찌앤잡 자체 개발 'AI 자동화 프로그램 3종' 무료 제공<br />
+                  <span style="color: #38BDF8;">타이핑 프로그램 최초 50개글 작성권 제공!</span>
+                </div>
+                <div>혜택 2. [평생 소장] 여행 블로그 수익화 바이블 (전자책 201P)</div>
+                <div>혜택 3. [무제한] 여행 블로그 수익화 VOD 12강 무제한 제공</div>
+                <div>혜택 4. [디럭스 수강생 전용] 수강생 카톡방 초대</div>
+                <div>혜택 5. 크몽 수강생 전용 마이리얼 트립 할인코드 제공</div>
               </div>
             </div>
 
             <p style="font-size: 18px; font-weight: 900; color: #38BDF8; margin-bottom: 24px;">
-              내일부터 당장 통장에 돈이 꽂히는 마법, 지금 바로 시작하세요!
+              내일부터 바로 달라지실 분은 지금 바로 시작하세요!
             </p>
 
             <!-- //버튼 (깜빡거리는 효과) -->
-            <button type="button" class="blinking-final-cta-btn" onclick="openCheckoutModal()">
+            <button type="button" class="blinking-final-cta-btn">
               [슈퍼얼리버드 곧 마감!] 여행 블로그 수익화 풀패키지 지금 혜택받고 시작하기
             </button>
           </section>
@@ -2342,23 +2464,25 @@
             
             <div class="sidebar-top-super-tag">⚡ 슈퍼얼리버드 단독 특가</div>
 
-            <!-- Price Area (사진 스타일: 상단 취소선 정가 + 25% 월 49,166 원 대형 강조) -->
+            <!-- Price Area (참고 이미지 스타일: 25% 취소선 정가 / 월 65,833원 12개월 할부가 / 월 49,166 원 현재 할인가) -->
             <div class="sidebar-price-header">
-              <div class="sidebar-orig-row">
+              <div style="display: flex; align-items: baseline; gap: 6px; margin-bottom: 4px;">
+                <span style="font-size: 15px; font-weight: 800; color: #E11D48;">25%</span>
                 <span class="sidebar-orig-price">790,000원</span>
               </div>
               
-              <div class="sidebar-monthly-big-row">
-                <span class="sidebar-discount-percent">25%</span>
-                <span class="sidebar-monthly-big-text">월 49,166 원</span>
+              <div style="display: flex; align-items: baseline; gap: 6px; margin-bottom: 4px; line-height: 1.3;">
+                <span style="font-size: 20px; font-weight: 800; color: #0F172A; letter-spacing: -0.5px;">월 65,833원</span>
+                <span style="font-size: 13px; font-weight: 500; color: #64748B;">12개월 할부가</span>
               </div>
 
-              <div class="sidebar-installment-sub">
-                <span>💳 12개월 무이자 시</span>
+              <div style="display: flex; align-items: baseline; gap: 6px; line-height: 1.3;">
+                <span style="font-size: 20px; font-weight: 900; color: #E11D48; letter-spacing: -0.5px;">월 49,166 원</span>
+                <span style="font-size: 13px; font-weight: 700; color: #E11D48;">현재 할인가</span>
               </div>
             </div>
 
-            <!-- Included Perks (목차보기 삭제 및 순서 조정) -->
+            <!-- Included Perks -->
             <div class="sidebar-perks-box">
               <div style="font-size: 13.5px; font-weight: 900; color: var(--text-main); margin-bottom: 10px;">
                 여행 블로그 수익화 풀패키지
@@ -2373,22 +2497,30 @@
               </div>
               <div class="sidebar-perk-item">
                 <span class="sidebar-check-icon">✓</span>
-                <span><strong>여행 블로그 수익화 VOD 12강 (평생 무제한)</strong></span>
+                <span><strong>여행 블로그 수익화 VOD 12강 제공</strong></span>
+              </div>
+              <div class="sidebar-perk-item">
+                <span class="sidebar-check-icon">✓</span>
+                <span><strong>수강생 카톡방 초대</strong></span>
+              </div>
+              <div class="sidebar-perk-item">
+                <span class="sidebar-check-icon">✓</span>
+                <span><strong>크몽 수강생 전용 마이리얼 트립 할인코드 제공</strong></span>
               </div>
             </div>
 
-            <!-- Action Buttons Stack (슈퍼 얼리버드 [마감 임박] + 얼리버드 인상예정 + 기존가 인상예정) -->
+            <!-- Action Buttons Stack -->
             <div class="sidebar-buttons-stack">
-              <button class="sidebar-cta-btn" onclick="openCheckoutModal()">
-                ⚡ [마감 임박] 슈퍼 얼리버드 수강신청
+              <button type="button" class="sidebar-cta-btn">
+                [곧 마감!] 슈퍼 얼리버드 수강신청
               </button>
 
-              <button type="button" class="sidebar-tier-locked-btn" onclick="openCheckoutModal()" title="1차 슈퍼얼리버드 선착순 마감 직후 69만원으로 인상 예정">
-                <span>🔒 얼리버드 인상예정 (69만원)</span>
+              <button type="button" class="sidebar-tier-locked-btn">
+                <span>[7일후] 얼리버드 인상예정(69만원)</span>
               </button>
 
-              <button type="button" class="sidebar-tier-locked-btn" onclick="openCheckoutModal()" title="정상가 790,000원으로 복귀 인상 예정">
-                <span>🔒 기존가 인상예정 (79만원)</span>
+              <button type="button" class="sidebar-tier-locked-btn">
+                <span>기존가 인상예정(79만원)</span>
               </button>
             </div>
 
@@ -2398,25 +2530,11 @@
       </div>
     </main>
 
-    <!-- Bottom Clickable Policy Buttons -->
+    <!-- Bottom Clickable Policy Tabs -->
     <div class="policy-bar-row">
-      <button type="button" class="policy-click-btn" onclick="openPolicyModal('product')">📋 [상품 안내]</button>
-      <button type="button" class="policy-click-btn" onclick="openPolicyModal('refund')">📄 [취소/환불규정]</button>
+      <button type="button" class="policy-click-btn" onclick="openPolicyModal('refund')">📄 [취소 환불규정]</button>
+      <button type="button" class="policy-click-btn" onclick="openPolicyModal('product')">📋 [상품정보고시]</button>
     </div>
-
-    <!-- Quiet Footer in White/Light Style -->
-    <footer class="site-footer-white">
-      <div class="container">
-        <p style="font-weight: 800; color: var(--text-main); font-size: 14px; margin-bottom: 8px;">
-          모찌앤잡 방구석 여행 블로그 연구소
-        </p>
-        <p style="line-height: 1.6;">
-          상호명: 모찌앤잡 비즈니스랩 | 대표: 모찌앤잡 | 크몽 공식 인증 전문 강사 | 이메일: contact@mozzinjob.kr<br />
-          본 강의에서 제공하는 모든 템플릿, AI 프로그램, 키워드 DB의 저작권은 모찌앤잡에 있으며 무단 복제 및 전재를 금합니다.<br />
-          © 2026 MOZZI N JOB. All Rights Reserved.
-        </p>
-      </div>
-    </footer>
 
     <!-- Mobile Docked Bottom Sticky Bar (for screen < 992px) -->
     <div class="mobile-docked-bar" aria-label="모바일 하단 수강신청 바">
@@ -2425,8 +2543,8 @@
           <span class="mobile-orig-label" style="text-decoration: line-through; color: #94A3B8;">790,000원</span>
           <span class="mobile-price-main"><span style="color: #F43F5E; font-weight: 900; margin-right: 4px;">25%</span>월 49,166 원</span>
         </div>
-        <button class="mobile-cta-action" onclick="openCheckoutModal()">
-          ⚡ [마감 임박] 슈퍼 얼리버드 수강신청
+        <button type="button" class="mobile-cta-action">
+          [곧 마감!] 슈퍼 얼리버드 수강신청
         </button>
       </div>
     </div>
@@ -2563,42 +2681,40 @@
       <button class="modal-close-x" onclick="closePolicyModal()">✕</button>
       
       <div style="display: flex; gap: 10px; margin-bottom: 18px; border-bottom: 1px solid var(--border-light); padding-bottom: 12px;">
-        <button type="button" id="tabProductBtn" class="policy-click-btn" style="border-color: var(--accent-sky); color: var(--accent-sky);" onclick="switchPolicyTab('product')">
-          📋 상품 안내
+        <button type="button" id="tabRefundBtn" class="policy-click-btn" style="border-color: var(--accent-sky); color: var(--accent-sky);" onclick="switchPolicyTab('refund')">
+          📄 취소 환불규정
         </button>
-        <button type="button" id="tabRefundBtn" class="policy-click-btn" onclick="switchPolicyTab('refund')">
-          📄 취소/환불규정
+        <button type="button" id="tabProductBtn" class="policy-click-btn" onclick="switchPolicyTab('product')">
+          📋 상품정보고시
         </button>
       </div>
 
-      <div id="policyContentProduct" style="font-size: 13px; color: var(--text-sub); line-height: 1.6; max-height: 380px; overflow-y: auto;">
-        <h4 style="font-size: 16px; color: var(--text-main); margin-bottom: 12px; font-weight: 800;">[상품 상세 안내]</h4>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; padding: 0;">
-          <li><strong>상품명:</strong> 모찌앤잡 방구석 여행 블로그 수익화 올인원 풀패키지</li>
-          <li><strong>제공 상품 구성:</strong><br />
-            - 여행 블로그 수익화 VOD 온라인 강의 12강 (평생 무제한 수강)<br />
-            - 모찌앤잡 여행 특화 AI 자동화 프로그램 3종 영구 소장권<br />
-            - 실전 수익화 노하우 전자책 201p (PDF)<br />
-            - 고수익 여행 롱테일 키워드 DB 제공
-          </li>
-          <li><strong>수강 방법:</strong> 결제 완료 즉시 기재하신 휴대전화 번호로 카카오톡 알림톡 및 이메일을 통해 강의실 접속 계정과 프로그램 다운로드 안내가 발송됩니다.</li>
-          <li><strong>수강 기기:</strong> PC, 태블릿, 모바일 등 모든 스마트 기기에서 웹 브라우저를 통해 편리하게 수강하실 수 있습니다.</li>
-          <li><strong>문의 채널:</strong> contact@mozzinjob.kr 또는 수강생 전용 1:1 고객센터</li>
-        </ul>
-      </div>
+      <div id="policyContentRefund" style="font-size: 13.5px; color: var(--text-sub); line-height: 1.7; max-height: 400px; overflow-y: auto; white-space: pre-line;"><strong>[기본 규정]</strong>
+1. 디지털 콘텐츠 제공이 개시되기 전: 취소 및 환불 가능
+2. 디지털 콘텐츠 제공이 개시된 후
+　· 가분적 콘텐츠: 개시되지 않은 범위에 대한 취소 및 환불 가능
+　· 불가분적 콘텐츠: 취소 및 환불 불가
+3. 용역 제공이 개시되기 전: 취소 및 환불 가능
+4. 용역 제공이 개시된 후
+　· 가분적 용역: 제공이 개시되지 않은 범위에 대한 취소 및 환불 가능
+　· 불가분적 용역: 취소 및 환불 불가
+5. 제공된 콘텐츠, 용역이 구매 확정된 경우: 거래 금액을 정산 받은 전문가와 직접 취소 및 환불 협의
 
-      <div id="policyContentRefund" style="display: none; font-size: 13px; color: var(--text-sub); line-height: 1.6; max-height: 380px; overflow-y: auto;">
-        <h4 style="font-size: 16px; color: var(--text-main); margin-bottom: 12px; font-weight: 800;">[취소 및 환불 규정]</h4>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; padding: 0;">
-          <li><strong>전액 환불:</strong> 결제일로부터 7일 이내이며, VOD 강의 수강 이력이 없고 전자책 PDF 및 AI 프로그램을 다운로드하지 않은 경우 100% 전액 환불됩니다.</li>
-          <li><strong>부분 환불 규정:</strong><br />
-            - VOD 강의 2개 이하 수강 시: 콘텐츠 이용 대금 공제 후 잔여 금액 환불<br />
-            - 전자책 PDF 또는 AI 프로그램 라이선스를 이미 열람/다운로드한 경우: 디지털 저작물 특성상 해당 상품 정가 공제 후 환불<br />
-            - 결제일로부터 7일 경과 시: 잔여 기간 및 진도율에 따른 환불 규정 적용
-          </li>
-          <li><strong>환불 신청 방법:</strong> 고객센터(contact@mozzinjob.kr)로 결제자 성명, 연락처, 결제 일시를 접수해 주시면 영업일 기준 48시간 이내에 신속하게 처리해 드립니다.</li>
-        </ul>
-      </div>
+<strong>[참고 사항]</strong>
+· 다음의 경우에는 해당 기준을 따릅니다.
+　- 전문가가 제시한 취소 조건이 기본 규정보다 의뢰인에게 유리한 경우
+　- 전문가가 별도로 명시한 사전 준비 사항(상담, 출장, 예약 등)과 이에 대한 취소 조건이 있는 경우
+· 제공받은 콘텐츠, 용역이 표시·광고의 내용과 다르거나 계약 내용과 다른 경우 콘텐츠를 공급받은 날부터 3개월 이내 또는 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 취소 및 환불이 가능합니다.</div>
+
+      <div id="policyContentProduct" style="display: none; font-size: 13.5px; color: var(--text-sub); line-height: 1.7; max-height: 400px; overflow-y: auto; white-space: pre-line;">제작자 또는 공급자: 모찌앤잡
+이용조건, 이용기간 : 상품 상세 참조
+최소 시스템 사양, 필수 소프트웨어 : 상품 상세 참조
+청약철회 또는 계약해지의 효과 :상품 상세 참조
+상품제공방식
+- 기본 전자책: [마이크몽 &gt; 구매 관리] 자동 발송
+- 용역: 전문가 별도 제공
+
+소비자상담전화 (크몽 고객센터) 1544-6254</div>
 
       <button class="modal-submit-blue-btn" style="margin-top: 20px;" onclick="closePolicyModal()">
         닫기
@@ -2611,10 +2727,13 @@
 
   <!-- Interactive Logic JavaScript -->
   <script>
-    // 1. Top Bar Countdown Timer
+    // 1. Top Bar Countdown Timer (10월 21일 자정 기준 실시간 카운트다운)
     function startCountdown() {
       const now = new Date();
-      let targetDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 23, 59, 59);
+      let targetDate = new Date(now.getFullYear(), 9, 21, 23, 59, 59);
+      if (targetDate <= now) {
+        targetDate = new Date(now.getFullYear() + 1, 9, 21, 23, 59, 59);
+      }
 
       function updateClock() {
         const current = new Date();
@@ -2906,8 +3025,7 @@
         placeholder.className = 'photo-upload-placeholder';
         placeholder.innerHTML = `
           <div class="photo-upload-icon">🖼️</div>
-          <div class="photo-upload-title">+ ${label}</div>
-          <div class="photo-upload-sub">클릭하여 이미지 파일 선택 또는 여기에 사진을 드래그하세요 (자동 저장)</div>
+          <div class="photo-upload-title">${label}</div>
         `;
         placeholder.addEventListener('click', () => fileInput.click());
         slotEl.appendChild(placeholder);
@@ -2918,8 +3036,9 @@
       const slots = document.querySelectorAll('.photo-upload-slot');
       for (const slotEl of slots) {
         const slotKey = slotEl.getAttribute('data-photo-slot');
+        const defaultSrc = slotEl.getAttribute('data-default-src');
         const savedDataUrl = await loadSlotImage(slotKey);
-        renderPhotoSlot(slotEl, savedDataUrl);
+        renderPhotoSlot(slotEl, savedDataUrl || defaultSrc);
 
         slotEl.addEventListener('dragover', (e) => {
           e.preventDefault();
